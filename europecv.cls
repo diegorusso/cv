@@ -210,7 +210,7 @@
 \DeclareOption{applemac}{\AtEndOfClass{\inputencoding{applemac}}}
 \DeclareOption{next}{\AtEndOfClass{\inputencoding{next}}}
 \DeclareOption{cp1250}{\AtEndOfClass{\inputencoding{cp1250}}}
-\DeclareOption{cp1252}{\AtEndOfClass{\inputencoding{cp1252}}}
+\DeclareOption{cp1252}{\AtEndOfClabfss{\inputencoding{cp1252}}}
 \DeclareOption{cp1257}{\AtEndOfClass{\inputencoding{cp1257}}}
 \DeclareOption{ansinew}{\AtEndOfClass{\inputencoding{ansinew}}}
 \DeclareOption{utf8}{\AtEndOfClass{\inputencoding{utf8x}}}
@@ -331,9 +331,19 @@
 } % End \AtBeginDocument
 
 % Thanks to Roman Bertle for suggesting the following:
-\renewcommand{\labelitemi}{\normalfont\bfseries \textendash}
+\renewcommand{\labelitemi}{\normalfont\bfseries $\bullet$}
 \renewcommand{\labelitemii}{\textasteriskcentered}
 \renewcommand{\labelitemiii}{\textperiodcentered}
+
+\let\tempitemize=\itemize
+\renewcommand\itemize{%
+ \setlength{\topsep}{0pt}%
+ \setlength{\partopsep}{0pt}%
+ \tempitemize
+ \setlength{\parskip}{0pt}%
+ \setlength{\parsep}{0pt}%
+ \setlength{\itemsep}{1pt}
+}
 
 \newcommand*{\ecvfirstname}[1]{\def\ecv@firstname{#1}} % Deprecated
 \newcommand*{\ecvlastname}[1]{\def\ecv@lastname{#1}} % Deprecated
@@ -582,6 +592,7 @@
 \newif\if@ecvitemstar
 \newcommand\ecvitem{\@ifstar{\@ecvitemstartrue \@ecvitem}%
   {\@ecvitemstarfalse\@ecvitem}}
-\newcommand\@ecvitem[3][2pt]{%
+\newcommand\@ecvitem[3][4pt]{%
   \if@ecvitemstar \ecvbullet\ \fi #2\vspace{#1} & #3
     \vspace{#1}\tabularnewline}
+
