@@ -335,15 +335,15 @@
 \renewcommand{\labelitemii}{\textasteriskcentered}
 \renewcommand{\labelitemiii}{\textperiodcentered}
 
-\let\tempitemize=\itemize
-\renewcommand\itemize{%
- \setlength{\topsep}{0pt}%
- \setlength{\partopsep}{0pt}%
- \tempitemize
- \setlength{\parskip}{0pt}%
- \setlength{\parsep}{0pt}%
- \setlength{\itemsep}{1pt}
-}
+% \let\tempitemize=\itemize
+% \renewcommand\itemize{%
+%  \setlength{\topsep}{0pt}%
+%  \setlength{\partopsep}{0pt}%
+%  \tempitemize
+%  \setlength{\parskip}{0pt}%
+%  \setlength{\parsep}{0pt}%
+%  \setlength{\itemsep}{1pt}
+% } 
 
 \newcommand*{\ecvfirstname}[1]{\def\ecv@firstname{#1}} % Deprecated
 \newcommand*{\ecvlastname}[1]{\def\ecv@lastname{#1}} % Deprecated
@@ -592,7 +592,7 @@
 \newif\if@ecvitemstar
 \newcommand\ecvitem{\@ifstar{\@ecvitemstartrue \@ecvitem}%
   {\@ecvitemstarfalse\@ecvitem}}
-\newcommand\@ecvitem[3][4pt]{%
+\newcommand\@ecvitem[3][3pt]{%
   \if@ecvitemstar \ecvbullet\ \fi #2\vspace{#1} & #3
     \vspace{#1}\tabularnewline}
 
