@@ -4,7 +4,7 @@
 \ProvidesFile{ecven.def}[europecv English definitions]
 % Personal information
 \def\ecv@infosectionkey{\ecv@utf{Personal information}}
-\def\ecv@namekey{\ecv@utf{Surname(s) / First name(s)}}
+\def\ecv@namekey{\ecv@utf{First name(s) / Surname(s)}}
 \def\ecv@addresskey{\ecv@utf{Address(es)}}
 \def\ecv@telkey{\ecv@utf{Telephone(s)}}
 \def\ecv@mobilekey{\ecv@utf{Mobile}}
