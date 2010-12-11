@@ -393,29 +393,29 @@
 \fi
 {\large\par\textbf{\ecv@infosectionkey}} & \tabularnewline
 & \tabularnewline
-\ecv@namekey & \large\textbf{\ecv@name}\tabularnewline[5pt]
+\ecv@namekey & \large\textbf{\ecv@name}\tabularnewline[3pt]
 \ifx\@empty\ecv@address\else
-\ecv@addresskey     &\ecv@address   \tabularnewline[5pt]
+\ecv@addresskey     &\ecv@address   \tabularnewline[3pt]
 \fi
 \ifx\@empty\ecv@telephone\else
 \ecv@telkey         &\ecv@telephone
  \ifx\@empty\ecv@mobile\else\qquad\ecv@mobilekey: \ecv@mobile\fi
-\tabularnewline[5pt]
+\tabularnewline[3pt]
 \fi
 \ifx\@empty\ecv@fax\else
-\ecv@faxkey         &\ecv@fax \tabularnewline[5pt]
+\ecv@faxkey         &\ecv@fax \tabularnewline[3pt]
 \fi
 \ifx\@empty\ecv@email\else
-\ecv@emailkey       &\ecv@email \tabularnewline[5pt]
+\ecv@emailkey       &\ecv@email \tabularnewline[3pt]
 \fi
 \ifx\@empty\ecv@homepage\else
-\ecv@homepagekey       &\ecv@homepage \tabularnewline[5pt]
+\ecv@homepagekey       &\ecv@homepage \tabularnewline[3pt]
 \fi
 \ifx\@empty\ecv@nationality\else
-\ecv@nationalitykey & \ecv@nationality \tabularnewline[5pt]
+\ecv@nationalitykey & \ecv@nationality \tabularnewline[3pt]
 \fi
 \ifx\@empty\ecv@birth\else
-\ecv@birthkey       & \ecv@birth \tabularnewline[5pt]
+\ecv@birthkey       & \ecv@birth \tabularnewline[3pt]
 \fi
 \ifx\@empty\ecv@gender\else
 \ecv@genderkey      & \ecv@gender \tabularnewline[#1]
@@ -480,21 +480,21 @@
   }
 \fi
 
-\newcommand*\ecvlanguagefooter[2][0pt]{\ecvitem[#1]{}{\quad\footnotesize{${}^{\mbox{\tiny#2}}$\textit{\ecv@langfooterkey}}}}
+\newcommand*\ecvlanguagefooter[2][0pt]{\ecvitem[#1]{}{\quad\small{${}^{\mbox{\tiny#2}}$\textit{\ecv@langfooterkey}}}}
 
 % See the Common European Framework of Reference for Languages:
 % http://www.coe.int/T/E/Cultural_Co-operation/education/Languages/Language_Policy/Common_Framework_of_Reference/default.asp
 \ifx\ecv@booktabs\undefined % Use table conforming to EU model
   \newcommand*\ecvCEF[2]{%
   %\setlength\tabcolsep{1mm}
-  \begin{tabular}{@{}>{\footnotesize}p{.2\ecv@langparwidth}@{\hspace{1mm}}>{\footnotesize\centering}p{.74\ecv@langparwidth}@{}}
+  \begin{tabular}{@{}>{\small}p{.2\ecv@langparwidth}@{\hspace{1mm}}>{\small\centering}p{.74\ecv@langparwidth}@{}}
 #1 & #2\tabularnewline
   \end{tabular}
   }
 \else
   \newcommand*\ecvCEF[2]{%
   %\setlength\tabcolsep{1mm}
-  \begin{tabular}{@{}>{\footnotesize}p{.2\ecv@langparwidth}@{\hspace{1mm}}>{\footnotesize\centering}p{.74\ecv@langparwidth}@{}}
+  \begin{tabular}{@{}>{\small}p{.2\ecv@langparwidth}@{\hspace{1mm}}>{\small\centering}p{.74\ecv@langparwidth}@{}}
 #1 & #2\tabularnewline
   \end{tabular}
   }
@@ -532,8 +532,8 @@
 \newcommand*{\ecvWithHorRule}{\def\ecv@hrule{\cline{1-1}}}
 % Initialization
 \ecvRuleWidth{\arrayrulewidth}
-\setlength\ecv@colsep{12pt}
-\setlength\ecv@leftcolwidth{50mm} % Default left column width
+\setlength\ecv@colsep{10pt}
+\setlength\ecv@leftcolwidth{45mm} % Default left column width
 \ecvExtraRowHeight{0pt}
 \ecvWithHorRule
 
@@ -592,7 +592,10 @@
 \newif\if@ecvitemstar
 \newcommand\ecvitem{\@ifstar{\@ecvitemstartrue \@ecvitem}%
   {\@ecvitemstarfalse\@ecvitem}}
-\newcommand\@ecvitem[3][3pt]{%
+\newcommand\@ecvitem[3][1pt]{%
   \if@ecvitemstar \ecvbullet\ \fi #2\vspace{#1} & #3
     \vspace{#1}\tabularnewline}
 
+\renewcommand{\normalsize}{\fontsize{2.3mm}{2.55mm}\selectfont}
+\renewcommand{\large}{\fontsize{3.4mm}{4.08mm}\selectfont}
+\renewcommand{\small}{\fontsize{2.2mm}{2.4mm}\selectfont}
