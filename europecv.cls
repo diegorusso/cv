@@ -304,7 +304,7 @@
 
 % Page number
 \def\ecv@lfoot{%
-  \footnotesize\textrm{\ecv@page~-~\ecv@cvofkey}\\
+  \small\textrm{\ecv@page~-~\ecv@cvofkey}\\
   \textrm{\ecv@footername}
 }
 
@@ -321,11 +321,11 @@
 \fancyhead{}
 \fancyfoot{}
 \fancyfoot[L]{\begin{minipage}{\ecv@leftcolwidth}
-\begin{flushright}\footnotesize\ecv@lfoot\end{flushright}%
+\begin{flushright}\small\ecv@lfoot\end{flushright}%
 \end{minipage}
 }
 \fancyfoot[R]{\begin{minipage}{\ecv@rightcolwidth}
-\footnotesize\ecv@rfoot
+\small\ecv@rfoot
 \end{minipage}}
 \renewcommand{\headrulewidth}{0pt}%
 } % End \AtBeginDocument
@@ -599,3 +599,4 @@
 \renewcommand{\normalsize}{\fontsize{2.3mm}{2.55mm}\selectfont}
 \renewcommand{\large}{\fontsize{3.4mm}{4.08mm}\selectfont}
 \renewcommand{\small}{\fontsize{2.2mm}{2.4mm}\selectfont}
+\renewcommand{\footnotesize}{\fontsize{2.2mm}{2.4mm}\selectfont}
