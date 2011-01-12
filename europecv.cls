@@ -596,7 +596,10 @@
   \if@ecvitemstar \ecvbullet\ \fi #2\vspace{#1} & #3
     \vspace{#1}\tabularnewline}
 
-\renewcommand{\normalsize}{\fontsize{2.3mm}{2.55mm}\selectfont}
+\renewcommand{\normalsize}{\fontsize{2.55mm}{2.55mm}\selectfont}
 \renewcommand{\large}{\fontsize{3.4mm}{4.08mm}\selectfont}
 \renewcommand{\small}{\fontsize{2.2mm}{2.4mm}\selectfont}
 \renewcommand{\footnotesize}{\fontsize{2.2mm}{2.4mm}\selectfont}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
