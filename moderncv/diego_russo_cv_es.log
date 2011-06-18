@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_4) (format=pdflatex 2011.6.17)  18 JUN 2011 12:57
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_4) (format=pdflatex 2011.6.17)  18 JUN 2011 12:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**diego_russo_cv_en.tex
-(./diego_russo_cv_en.tex
+**diego_russo_cv_es.tex
+(./diego_russo_cv_es.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, cz
 ech, slovak, dutch, ukenglish, usenglishmax, basque, french, german-x-2009-06-1
@@ -531,8 +531,8 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \maketitlepicturewidth=\skip63
 \maketitledetailswidth=\skip64
 )
-(./diego_russo_cv_en.aux)
-\openout1 = `diego_russo_cv_en.aux'.
+(./diego_russo_cv_es.aux)
+\openout1 = `diego_russo_cv_es.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
@@ -631,9 +631,9 @@ LaTeX Info: Redefining \ref on input line 45.
 LaTeX Info: Redefining \pageref on input line 45.
 LaTeX Info: Redefining \nameref on input line 45.
 
-(./diego_russo_cv_en.out) (./diego_russo_cv_en.out)
+(./diego_russo_cv_es.out) (./diego_russo_cv_es.out)
 \@outlinefile=\write3
-\openout3 = `diego_russo_cv_en.out'.
+\openout3 = `diego_russo_cv_es.out'.
 
 Package hyperref Info: Option `breaklinks' set `true' on input line 45.
 
@@ -694,10 +694,10 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 53.
 (/opt/local/share/texmf-texlive-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 3590) in paragraph at lines 53--53
-[]\T1/lmss/bx/n/10 Python/Django Pro-gram-mer\T1/lmss/m/n/10 , \T1/lmss/m/sl/10
- Con-sorzio Miles - Servizi In-te-grati, Rome []$\T1/pcr/m/sl/10 http : / / www
- .
+Underfull \hbox (badness 2846) in paragraph at lines 53--53
+[]\T1/lmss/bx/n/10 Desarrollador Python/Django\T1/lmss/m/n/10 , \T1/lmss/m/sl/1
+0 Con-sorzio Miles - Servizi In-te-grati, Roma []$\T1/pcr/m/sl/10 http : / / ww
+w .
  []
 
 
@@ -862,7 +862,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
-[3] (./diego_russo_cv_en.bbl)
+[3] (./diego_russo_cv_es.bbl)
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
@@ -870,19 +870,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
 [4]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
- (./diego_russo_cv_en.aux)
+ (./diego_russo_cv_es.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package rerunfilecheck Info: File `diego_russo_cv_en.out' has not changed.
-(rerunfilecheck)             Checksum: 3D0BB5872293CD414DB213D8A127B738;536.
+Package rerunfilecheck Info: File `diego_russo_cv_es.out' has not changed.
+(rerunfilecheck)             Checksum: CF48227602BC5E0C35FEFE72ADFE3915;533.
  ) 
 Here is how much of TeX's memory you used:
  6522 strings out of 494770
  94663 string characters out of 3171403
- 190067 words of memory out of 3000000
+ 190082 words of memory out of 3000000
  9553 multiletter control sequences out of 15000+200000
  90447 words of font info for 62 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 33i,12n,45p,1215b,421s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,12n,45p,1234b,421s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/opt/local/share/texmf-texlive-dist/fonts/enc/dvips/lm/lm-ec.enc}{/opt/local
 /share/texmf-texlive-dist/fonts/enc/dvips/base/8r.enc}</opt/local/share/texmf-t
 exlive-dist/fonts/type1/public/lm/lmro10.pfb></opt/local/share/texmf-texlive-di
@@ -900,10 +900,10 @@ ublic/lm/lmsso8.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/lm/
 lmsso9.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/marvosym/mar
 vosym.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/urw/courier/ucrr8a.p
 fb></opt/local/share/texmf-texlive-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on diego_russo_cv_en.pdf (4 pages, 391045 bytes).
+Output written on diego_russo_cv_es.pdf (4 pages, 393126 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
+ 187 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  17 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
