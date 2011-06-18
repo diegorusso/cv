@@ -36,6 +36,12 @@
 % grey
 \newif\if@colorgrey\@colorgreyfalse
 \DeclareOption{grey}{\@colorgreytrue}
+% darkblue
+\newif\if@colordarkblue\@colordarkbluefalse
+\DeclareOption{darkblue}{\@colordarkbluetrue}
+% darkred
+\newif\if@colordarkred\@colordarkredfalse
+\DeclareOption{darkred}{\@colordarkredtrue}
 
 % roman option
 \newif\if@roman\@romanfalse
@@ -87,6 +93,16 @@
   \definecolor{sectionrectanglecolor}{rgb}{0.75,0.75,0.75}
   \definecolor{sectiontitlecolor}{rgb}{0.35,0.35,0.35}
   \definecolor{subsectioncolor}{rgb}{0.35,0.35,0.35}\fi
+\if@colordarkblue
+  \definecolor{addresscolor}{rgb}{0,0,0.55}
+  \definecolor{sectionrectanglecolor}{rgb}{0.10,0,0.55}
+  \definecolor{sectiontitlecolor}{rgb}{0,0,0.65}
+  \definecolor{subsectioncolor}{rgb}{0,0,0.65}\fi
+\if@colordarkred
+  \definecolor{addresscolor}{rgb}{0.65,0,0}
+  \definecolor{sectionrectanglecolor}{rgb}{0.65,0.10,0.10}
+  \definecolor{sectiontitlecolor}{rgb}{0.65,0.10,0.10}
+  \definecolor{subsectioncolor}{rgb}{0.65,0.10,0.10}\fi
 
 % fonts
 \if@roman
