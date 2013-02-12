@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 NOV 2012 15:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 FEB 2013 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -885,7 +885,7 @@ Package rerunfilecheck Info: File `diego_russo_cv_en.out' has not changed.
 Here is how much of TeX's memory you used:
  6925 strings out of 493488
  98959 string characters out of 3141326
- 202312 words of memory out of 3000000
+ 202297 words of memory out of 3000000
  10079 multiletter control sequences out of 15000+200000
  87684 words of font info for 61 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -907,7 +907,7 @@ lm/lmsso17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmsso8
 /local/texlive/2012/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/l
 ocal/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/tex
 live/2012/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on diego_russo_cv_en.pdf (4 pages, 404581 bytes).
+Output written on diego_russo_cv_en.pdf (4 pages, 403542 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  166 compressed objects within 2 object streams
