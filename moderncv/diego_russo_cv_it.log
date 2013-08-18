@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.29)  5 AUG 2013 22:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.29)  18 AUG 2013 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,15 +761,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 76--76
-[]\T1/lmss/m/n/9 Le com-pe-tenze rag-giunte sono tutte in-cluse nel \T1/lmss/bx
-/n/9 Quadro co-mune eu-ropeo di rifer-i-mento per
+Underfull \hbox (badness 7064) in paragraph at lines 76--76
+[]\T1/lmss/m/n/9 Competenze nel \T1/lmss/bx/n/9 Quadro co-mune eu-ropeo di rife
+r-i-mento per la conoscenza delle lingue
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 76--76
-\T1/lmss/bx/n/9 la conoscenza delle lingue \T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 htt
-p : / / it . wikipedia . org / wiki / Quadro _ comune _ europeo _ di _
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 http : / / it . wikipedia . org / wiki / Quadr
+o _ comune _ europeo _ di _ riferimento _ per _ la _
  []
 
 
@@ -778,15 +778,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 78--78
-[]\T1/lmss/m/n/9 Le com-pe-tenze rag-giunte sono tutte in-cluse nel \T1/lmss/bx
-/n/9 Quadro co-mune eu-ropeo di rifer-i-mento per
+Underfull \hbox (badness 7064) in paragraph at lines 78--78
+[]\T1/lmss/m/n/9 Competenze nel \T1/lmss/bx/n/9 Quadro co-mune eu-ropeo di rife
+r-i-mento per la conoscenza delle lingue
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 78--78
-\T1/lmss/bx/n/9 la conoscenza delle lingue \T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 htt
-p : / / it . wikipedia . org / wiki / Quadro _ comune _ europeo _ di _
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 http : / / it . wikipedia . org / wiki / Quadr
+o _ comune _ europeo _ di _ riferimento _ per _ la _
  []
 
 
@@ -795,15 +795,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 80--80
-[]\T1/lmss/m/n/9 Le com-pe-tenze rag-giunte sono tutte in-cluse nel \T1/lmss/bx
-/n/9 Quadro co-mune eu-ropeo di rifer-i-mento per
+Underfull \hbox (badness 7064) in paragraph at lines 80--80
+[]\T1/lmss/m/n/9 Competenze nel \T1/lmss/bx/n/9 Quadro co-mune eu-ropeo di rife
+r-i-mento per la conoscenza delle lingue
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 80--80
-\T1/lmss/bx/n/9 la conoscenza delle lingue \T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 htt
-p : / / it . wikipedia . org / wiki / Quadro _ comune _ europeo _ di _
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+\T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 http : / / it . wikipedia . org / wiki / Quadr
+o _ comune _ europeo _ di _ riferimento _ per _ la _
  []
 
 
@@ -811,16 +811,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[2]
-Underfull \hbox (badness 3557) in paragraph at lines 82--82
-[]\T1/lmss/m/n/9 Le com-pe-tenze rag-giunte sono tutte in-cluse nel \T1/lmss/bx
-/n/9 Quadro co-mune eu-ropeo di rifer-i-mento per
+
+Underfull \hbox (badness 7064) in paragraph at lines 82--82
+[]\T1/lmss/m/n/9 Competenze nel \T1/lmss/bx/n/9 Quadro co-mune eu-ropeo di rife
+r-i-mento per la conoscenza delle lingue
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 82--82
-\T1/lmss/bx/n/9 la conoscenza delle lingue \T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 htt
-p : / / it . wikipedia . org / wiki / Quadro _ comune _ europeo _ di _
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\T1/lmss/m/n/9 ([]$\T1/pcr/m/n/9 http : / / it . wikipedia . org / wiki / Quadr
+o _ comune _ europeo _ di _ riferimento _ per _ la _
  []
 
 
@@ -838,7 +838,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
@@ -878,12 +878,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--108
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 117--126
 
  []
@@ -914,13 +914,13 @@ Package rerunfilecheck Info: File `diego_russo_cv_it.out' has not changed.
 (rerunfilecheck)             Checksum: AB4B532666B26E022D494F04F2AB9723;538.
  ) 
 Here is how much of TeX's memory you used:
- 7033 strings out of 493315
- 100773 string characters out of 6137904
- 203245 words of memory out of 5000000
- 10328 multiletter control sequences out of 15000+600000
- 90455 words of font info for 62 fonts, out of 8000000 for 9000
+ 7032 strings out of 493315
+ 100760 string characters out of 6137904
+ 202245 words of memory out of 5000000
+ 10327 multiletter control sequences out of 15000+600000
+ 87684 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 32i,12n,45p,1450b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,12n,45p,1414b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/te
 xmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2013/texmf-dist/f
@@ -938,7 +938,7 @@ lm/lmsso17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsso8
 /local/texlive/2013/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/l
 ocal/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on diego_russo_cv_it.pdf (5 pages, 408326 bytes).
+Output written on diego_russo_cv_it.pdf (5 pages, 407159 bytes).
 PDF statistics:
  201 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams
