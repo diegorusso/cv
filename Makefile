@@ -1,2 +1,2 @@
-TARGETS=diego_russo_cv_en diego_russo_cv_it diego_russo_cv_es
+TARGETS=diego_russo_cv_en
 include Makefile.include
