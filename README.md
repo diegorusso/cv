@@ -10,11 +10,7 @@ To compile the pdf just type:
     $ make distill      # Distills a camera-ready PDF (with fonts embedded) - Requires exiftool
     $ make snapshot     # Create a pdf with revision suffixed in the filename
 
-PDF generated are:
-
- * diego\_russo\_cv\_en.pdf
- * diego\_russo\_cv\_es.pdf
- * diego\_russo\_cv\_it.pdf
+PDF generated is diego\_russo\_cv\_en.pdf
 
 # Credits
  * CV based on ModernCV with my own customization: https://www.ctan.org/pkg/moderncv?lang=en
