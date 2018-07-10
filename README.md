@@ -1,6 +1,5 @@
 # Quick Start
 
-My CV is written in three languages: English, Spanish and Italian. Consider the English version the most updated.
 To compile the pdf just type:
 
     $ make              # Compile the pdf
