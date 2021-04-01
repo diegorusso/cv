@@ -4,190 +4,531 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-projectorg/lppl/.
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% possible options include font size ('10pt', '11pt' and '12pt'),
+% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper',
+% 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}
 
 % moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and
+% 'fancy'
+\moderncvstyle{classic}
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey',
+% 'orange', 'purple' and 'red'
+\moderncvcolor{burgundy}
+% to set the default font; use '\sfdefault' for the default sans serif font,
+% '\rmdefault' for the default roman one, or any tex font name
+% \renewcommand{\familydefault}{\sfdefault}
+% uncomment to suppress automatic page numbering for CVs longer than one page
+% \nopagenumbers{}
 
 % character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% if you are not using xelatex or lualatex, replace by the encoding you are
+% using
+\usepackage[utf8]{inputenc}
+% if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% \usepackage{CJKutf8} 
 
 \usepackage{footmisc} % enabling footnotes.
 
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
-\setlength{\hintscolumnwidth}{2.52cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2.52cm}
+% for the 'classic' style, if you want to force the width allocated to your
+% name and avoid line breaks. be careful though, the length is normally
+% calculated to avoid any overlap with your personal info; use this at your own
+% typographical risks...
+% \setlength{\makecvtitlenamewidth}{10cm}
 
-\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+% required when changes are made to page layout lengths
+\AtBeginDocument{\recomputelengths}
 
 % personal data
 \name{Diego}{Russo}
-\title{Software Engineer}               % optional, remove the line if not wanted
-\address{Cambridge, UK}                 %{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+44 (0) 7428 251191}     % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-%\phone[fixed]{+2~(345)~678~901}
-%\phone[fax]{+3~(456)~789~012}
-\email{me@diegor.it}                    % optional, remove the line if not wanted
-\homepage{www.diegor.uk}                % optional, remove the line if not wanted
-\social[linkedin]{diegor}               % optional, remove / comment the line if not wanted
-\social[twitter]{diegor}                % optional, remove / comment the line if not wanted
-\social[github]{diegorusso}             % optional, remove / comment the line if not wanted
-\extrainfo{last update: January 2020}   % optional, remove the line if not wanted.
-\photo[80pt][0.4pt]{images/diegor}      % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{"Now is better than never" - The Zen of Python}                 % optional, remove the line if not wanted
+% Below fields are optional, remove the line if not wanted
+\title{Software Engineer}
+% {postcode city}{country}; the "postcode city" and "country" arguments can be
+% omitted or provided empty
+\address{Cambridge, UK}
+% the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\phone[mobile]{+44 (0) 7428 251191}
+\email{me@diegor.it}
+\homepage{www.diegor.uk}
+\social[linkedin]{diegor}
+\social[twitter]{diegor}
+\social[github]{diegorusso}
+\extrainfo{last update: April 2021}
+% '64pt' is the height the picture must be resized to, 0.4pt is the thickness
+% of the frame around it (put it to 0pt for no frame) and 'picture' is the name
+% of the picture file
+\photo[80pt][0.4pt]{images/diegor}
+\quote{``Now is better than never'' --- The Zen of Python}
 
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
+% bibliography adjustments (only useful if you make citations in your resume,
+% or print a list of publications using BibTeX)
+% to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter
+\renewcommand*
+    {\bibliographyitemlabel}
+    {\@biblabel{\arabic{enumiv}}}
+\makeatother
+% to redefine the bibliography heading string ("Publications")
+% \renewcommand{\refname}{Articles}
 
 % bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
+% \usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+% -----------------------------------------------------------------------------
 %            content
-%----------------------------------------------------------------------------------
+% -----------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-\makecvtitle
+% -----       resume       ----------------------------------------------------
+\makecvtitle\section{Desired employment}
 
-\section{Desired employment}
-\cvline{}{\large\textbf{I'm always looking for a challenging position where I can express and use my passion for programming and technology. I mostly develop in Python in *NIX environment on a daily basis. As I'm a dynamic person, professional and personal growth are very important to me.}}
+\cvline{}{\large\textbf{I'm always looking for a challenging position where I
+can express and use my passion for programming and technology. I mostly develop
+in Python in *NIX environment on a daily basis. As I'm a dynamic person,
+professional and personal growth are very important to me.}}
 
 \section{Experience}
 \subsection{Vocational}
-% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{\textbf{Since 2020-01}}{Staff Software Engineer in Machine Learning Group}{Arm Ltd, \url{http://www.arm.com}}{Cambridge, UK}{}{Working in the tooling team as Python expert, we develop tools to facilitate customers and partners to use the all the features available in Arm hardware and software in order to have better performance in their ML workloads.}
+% arguments 3 to 6 can be left empty
+% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{\textbf{Since 2020--01}}
+    {Staff Software Engineer in Machine Learning Group}
+    {Arm Ltd, \url{http://www.arm.com}}
+    {Cambridge, UK}{}
+    {Working in the tooling team as Python expert, we develop tools to
+    facilitate customers and partners to use the all the features available in
+    Arm hardware and software in order to have better performance in their ML
+    workloads.}
 
-\cventry{2017-09/2019-12}{Staff Software Engineer in ISG}{Arm Ltd, \url{http://www.arm.com}}{Cambridge, UK}{}{Working in the \textbf{Mbed Linux OS team} (\url{https://os.mbed.com/docs/mbed-linux-os/}), \textbf{I'm leading the build, test and validation automation infrastructure of our product: from build to data representation.} Moreover I'm part of the core engineer team which develop the product itself.  My day to day job requires constant communication with other teams overseas and with external partners. Software stack used: \textbf{Jenkins/pipelines, LAVA, Artifactory, Docker, Python and Bash, all based on Linux systems.}}
+\cventry{2017--09/2019--12}
+    {Staff Software Engineer in ISG}
+    {Arm Ltd, \url{http://www.arm.com}}
+    {Cambridge, UK}{}
+    {Working in the \textbf{Mbed Linux OS team}
+    (\url{https://os.mbed.com/docs/mbed-linux-os/}), \textbf{I'm leading the
+    build, test and validation automation infrastructure of our product: from
+    build to data representation.} Moreover I'm part of the core engineer team
+    which develop the product itself. My day to day job requires constant
+    communication with other teams overseas and with external partners.
+    Software stack used: \textbf{Jenkins/pipelines, LAVA, Artifactory, Docker,
+    Python and Bash, all based on Linux systems.}}
 
-\cventry{2016-06/2017-08}{Staff Software Engineer in DSG}{Arm Ltd, \url{http://www.arm.com}}{Cambridge, UK}{}{\textbf{Leading of a combined infrastructure team (8)}, I'm looking after both the Arm Compiler and OSS Toolchains automation infrastructures (GNU-A, GNU-RM and LLVM OSS). Besides the technical lead, my role is to make sure all infrastructures respect design principles whilst sharing knowledge, technologies and processes across different teams. I keep a monthly forum with stakeholders to be sure to catch their requirements and I represent DSG (Development Solutions Group) infrastructures (not only compilers) across the business.}
+\cventry{2016--06/2017--08}
+    {Staff Software Engineer in DSG}
+    {Arm Ltd, \url{http://www.arm.com}}
+    {Cambridge, UK}{}
+    {\textbf{Leading of a combined infrastructure team (8)}, I'm looking after
+    both the Arm Compiler and OSS Toolchains automation infrastructures (GNU-A,
+    GNU-RM and LLVM OSS). Besides the technical lead, my role is to make sure
+    all infrastructures respect design principles whilst sharing knowledge,
+    technologies and processes across different teams. I keep a monthly forum
+    with stakeholders to be sure to catch their requirements and I represent
+    DSG (Development Solutions Group) infrastructures (not only compilers)
+    across the business.}
 
-\cventry{2013-11/2016-05}{Staff Software Engineer in DSG}{Arm Ltd, \url{http://www.arm.com}}{Cambridge, UK}{}{Working in the GNU team, our goal is the delivery of the GNU toolchain optimized for Arm processors. \textbf{I am responsible of the infrastructure for automatic builds, tests and benchmarks.} Most of the infrastructure is \textbf{Python} based and it automates all the phases of the process: checkout, build, systematic tests (DejaGNU) through LSF (Load Sharing Facility) and the local aarch64 board farm, and performance tests. I also developed an application for triaging test results:it stores them into a database (\textbf{MongoDB}) in order to analyse those data and to find error root causes, trends, common patterns and automating the tracking of issues using JIRA. Software stack used: \textbf{flask} for the backaend, \textbf{bootstrap and AngularJS} for the frontend side.}
+\cventry{2013--11/2016--05}
+    {Staff Software Engineer in DSG}
+    {Arm Ltd, \url{http://www.arm.com}}
+    {Cambridge, UK}{}
+    {Working in the GNU team, our goal is the delivery of the GNU toolchain
+    optimized for Arm processors. \textbf{I am responsible of the
+    infrastructure for automatic builds, tests and benchmarks.} Most of the
+    infrastructure is \textbf{Python} based and it automates all the phases of
+    the process: checkout, build, systematic tests (DejaGNU) through LSF (Load
+    Sharing Facility) and the local aarch64 board farm, and performance tests.
+    I also developed an application for triaging test results:it stores them
+    into a database (\textbf{MongoDB}) in order to analyse those data and to
+    find error root causes, trends, common patterns and automating the tracking
+    of issues using Jira. Software stack used: \textbf{flask} for the backaend,
+    \textbf{bootstrap and AngularJS} for the frontend side.}
 
-\cventry{2011-10/2013-10}{Senior Software Engineer in Engineering IT}{Arm Ltd, \url{http://www.arm.com}}{Cambridge, UK}{}{Working in a team, I've worked on internal projects using \textbf{CentOS} and mainly the following languages: \textbf{Python, Java, Perl, C, tcsh and bash}. I developed from scratch a reliable and fault tolerant application that interacts with the cluster (\textbf{LSF}) and a AMQ server (\textbf{RabbitMQ}). For this project the main language has been \textbf{Python} using a NOSQL database (\textbf{MongoDB} configured as ReplicaSet). I've also developed a JIRA plugin to interact with an internal software in order to synchronise external tickets with internal ones. I look after, improve and fix many IT internal software using a wide range of languages. I've got experience also with LSF cluster, customizing deeply its behaviour in order to provide a functional solution to our customer. Other minor projects are related to \textbf{svn hooks}, FlexNet Manager server, LSF monitor, internal application interacting with distributed storage. I was running the IT ECS (\textit{Early Career Scheme}), for hiring graduates and interns.}
+\cventry{2011--10/2013--10}
+    {Senior Software Engineer in Engineering IT}
+    {Arm Ltd, \url{http://www.arm.com}}
+    {Cambridge, UK}{}
+    {Working in a team, I've worked on internal projects using \textbf{CentOS}
+    and mainly the following languages: \textbf{Python, Java, Perl, C, tcsh and
+    bash}. I developed from scratch a reliable and fault tolerant application
+    that interacts with the cluster (\textbf{LSF}) and a AMQ server
+    (\textbf{RabbitMQ}). For this project the main language has been
+    \textbf{Python} using a NOSQL database (\textbf{MongoDB} configured as
+    ReplicaSet). I've also developed a JIRA plugin to interact with an internal
+    software in order to synchronise external tickets with internal ones. I
+    look after, improve and fix many IT internal software using a wide range of
+    languages. I've got experience also with LSF cluster, customizing deeply
+    its behaviour in order to provide a functional solution to our customer.
+    Other minor projects are related to \textbf{svn hooks}, FlexNet Manager
+    server, LSF monitor, internal application interacting with distributed
+    storage. I was running the IT ECS (\textit{Early Career Scheme}), for
+    hiring graduates and interns.}
 
-\cventry{2008-04/2011-02}{Software/System Engineer in R\&D}{Forinicom Srl, \url{http://www.com-com.it}}{Bastia Umbra, IT}{}{Working in a research and development team to create an innovative and unique product in the wireless communications market (WiFi). I initially worked on \textbf{embedded systems} (ubnt, alix, pcengines), customizing the operating system (ubnt, openwrt) and the software to manage authentication (hostapd, wpa-supplicant). After this first phase, I focused on the software for deploying these devices and on large-scale production software. Also, we developed a complete solution for managing \textbf{hotspots}: I worked on a captive-portal to manage authentication, sessions log, signs up, signals management from remote devices, integration with our management software, payment via credit card and authentication via SMS, complying with Pisanu law. My final task was to create software for network monitoring. It is a \textbf{PyQT stand-alone} application, using internal django based API. Software stack used: \textbf{Python/Django with PostgreSQL database on Debian OS virtualised on XEN}}
+\cventry{2008--04/2011--02}
+    {Software/System Engineer in R\&D}
+    {Forinicom Srl, \url{http://www.com-com.it}}
+    {Bastia Umbra, IT}{}
+    {Working in a research and development team to create an innovative and
+    unique product in the wireless communications market (WiFi). I initially
+    worked on \textbf{embedded systems} (ubnt, alix, pcengines), customizing
+    the operating system (ubnt, openwrt) and the software to manage
+    authentication (hostapd, wpa-supplicant). After this first phase, I focused
+    on the software for deploying these devices and on large-scale production
+    software. Also, we developed a complete solution for managing
+    \textbf{hotspots}: I worked on a captive-portal to manage authentication,
+    sessions log, signs up, signals management from remote devices, integration
+    with our management software, payment via credit card and authentication
+    via SMS, complying with Pisanu law. My final task was to create software
+    for network monitoring. It is a \textbf{PyQT stand-alone} application,
+    using internal django based API\@. Software stack used:
+    \textbf{Python/Django with PostgreSQL database on Debian OS virtualised on
+    XEN}}
 
-\cventry{2010-11/2011-01}{Python Engineer}{Exion Sagl, Manno, Switzerland, \url{http://www.exion.ch/}}{Remote, Assisi, IT}{}{Setting up an \textbf{Adult WebTV} entirely developed in \textbf{Python/Django with PostgreSQL} database on Linux/Apache platform and Red5 as streaming server. The work is managed independently using git as revision control system.}
+\cventry{2010--11/2011--01}
+    {Python Engineer}
+    {Exion Sagl, Manno, Switzerland, \url{http://www.exion.ch/}}
+    {Remote, Assisi, IT}{}
+    {Setting up an \textbf{Adult WebTV} entirely developed in
+    \textbf{Python/Django with PostgreSQL} database on Linux/Apache platform
+    and Red5 as streaming server. The work is managed independently using git
+    as revision control system.}
 
-\cventry{2010-10/2011-01}{Python Engineer}{Sauce Labs Inc, San Francisco, USA, \url{http://saucelabs.com}}{Remote, Assisi, IT}{}{Implementing new features, bug fixing, structural changes to the site of Sauce Labs. Distance work coordination. Site is developed in \textbf{Python/Pylons} using \url{http://github.com} as revision control system platform.}
+\cventry{2010--10/2011--01}
+    {Python Engineer}
+    {Sauce Labs Inc, San Francisco, USA, \url{http://saucelabs.com}}
+    {Remote, Assisi, IT}{}
+    {Implementing new features, bug fixing, structural changes to the site of
+    Sauce Labs. Distance work coordination. Site is developed in
+    \textbf{Python/Pylons} using \url{http://github.com} as revision control
+    system platform.}
 
-\cventry{2006-12/2008-08 2009-09/2011-09}{Python/Django Engineer}{Consorzio Miles - Servizi Integrati, Rome}{Assisi, IT}{}{Working in a team, I developed a management application for the municipality of Bettona using \textbf{Django, Python, PostgreSQL, Linux, Apache}, for the computerization of services, the management of personal data, building practices, urban planning, calculation of ICI tax and updating of land registry data. Also I created an advanced web interface for sending proposed practices, on-line services conference, integration process, exploration of cadastral map in \textbf{DXF} and production of customized automated printing. Team tools were svn/git and trac. \textbf{The project had a gap year when I started working for Forinicom Srl.} Whenever there are overlaps, the jobs have been on a part-time basis.}
+\cventry{2006--12/2008--08 2009--09/2011--09}
+    {Python/Django Engineer}
+    {Consorzio Miles --- Servizi Integrati, Rome}
+    {Assisi, IT}{}
+    {Working in a team, I developed a management application for the
+    municipality of Bettona using \textbf{Django, Python, PostgreSQL, Linux,
+    Apache}, for the computerization of services, the management of personal
+    data, building practices, urban planning, calculation of ICI tax and
+    updating of land registry data. Also I created an advanced web interface
+    for sending proposed practices, on-line services conference, integration
+    process, exploration of cadastral map in \textbf{DXF} and production of
+    customized automated printing. Team tools were svn/git and trac.
+    \textbf{The project had a gap year when I started working for Forinicom
+    Srl.} Whenever there are overlaps, the jobs have been on a part-time
+    basis.}
 
 \subsection{Miscellaneous}
-\cventry{2016-01/2016-06}{iPhone (iOS9) and Swift 2.2}{University of Perugia, Computer Science department, \url{http://informatica.unipg.it}}{Online, Udemy - Cambridge, UK}{}{After self learning Swift 2.2, I've attended an online course to create iOS apps. I've used those skills to create DipMatBeacon (\url{https://github.com/diegorusso/DipMatBeacon}), an app used to check the booking state of Maths department rooms using iBeacon technology. Patterns used to write the app: MVC, delegation, protocols, safe programming patterns. Other features: search, share, TouchID, Reachability, iBeacon integration.}
+\cventry{2016--01/2016--06}
+    {iPhone (iOS9) and Swift 2.2}
+    {University of Perugia, Computer Science department,
+        \url{http://dmi.unipg.it}}
+    {Online, Udemy --- Cambridge, UK}{}
+    {After self learning Swift 2.2, I've attended an online course to create
+    iOS apps. I've used those skills to create DipMatBeacon
+    (\url{https://github.com/diegorusso/DipMatBeacon}), an app used to check
+    the booking state of Maths department rooms using iBeacon technology.
+    Patterns used to write the app: MVC, delegation, protocols,
+    safe programming patterns. Other features: search, share, TouchID,
+    Reachability, iBeacon integration.}
 
-\cventry{2015-06/2015-12}{mm\_mpi: Matrix multiplication using MPI}{University of Perugia, Computer Science department, \url{http://informatica.unipg.it}}{Cambridge, UK}{}{Developed an application in C using MPI and Cannon's algorithm. The code generates different versions of the application: blocking and non-blocking MPI calls, CBLAS, and different OpenMP optimizations. An analysis is performed to compare all those versions. The code is checked-in on \url{https://github.com/diegorusso/mm\_mpi}}
+\cventry{2015--06/2015--12}
+    {mm\_mpi: Matrix multiplication using MPI}
+    {University of Perugia, Computer Science department,
+        \url{http://dmi.unipg.it}}
+    {Cambridge, UK}{}
+    {Developed an application in C using MPI and Cannon's algorithm. The code
+    generates different versions of the application: blocking and non-blocking
+    MPI calls, CBLAS, and different OpenMP optimizations. An analysis is
+    performed to compare all those versions. The code is checked-in on
+    \url{https://github.com/diegorusso/mm\_mpi}}
 
-\cventry{2013-06/2015-06}{Staff Software Engineer}{Opentaste Ltd \url{http://www.opentaste.eu}}{Remote, Cambridge, UK}{}{Working in my spare time, I am part of a distributed team of 15-20 people across the globe (San Francisco, Italy, Australia). My main tasks are technical counselor and code reviewer. Opentaste is entirely written in \textbf{Python} using \textbf{Flask} as web framework and \textbf{MongoDB} as database. Communication is crucial and we do organise regular hangouts to discuss about plans, issues and tasks. We are using \textbf{github} and \textbf{Google Docs} for managing our work }
+\cventry{2013--06/2015--06}
+    {Staff Software Engineer}
+    {Opentaste Ltd \url{http://www.opentaste.eu}}
+    {Remote, Cambridge, UK}{}
+    {Working in my spare time, I am part of a distributed team of 15--20 people
+    across the globe (San Francisco, Italy, Australia). My main tasks are
+    technical counselor and code reviewer. Opentaste is entirely written in
+    \textbf{Python} using \textbf{Flask} as web framework and \textbf{MongoDB}
+    as database. Communication is crucial and we do organise regular hangouts
+    to discuss about plans, issues and tasks. We are using \textbf{github} and
+    \textbf{Google Docs} for managing our work }
 
-\cventry{2011-06}{Teaching - Advanced computer course}{Centro Studi Citt\'a di Foligno, \url{http://www.cstudifoligno.it}}{Foligno, IT}{}{Taught a class of 10 people the existence of the open source world, installing open source software on Windows and then proceed to install Ubuntu on their laptop.}
+\cventry{2011--06}
+    {Teaching --- Advanced computer course}
+    {Centro Studi Citt\'a di Foligno, \url{http://www.cstudifoligno.it}}
+    {Foligno, IT}{}
+    {Taught a class of 10 people the existence of the open source world,
+    installing open source software on Windows and then proceed to install
+    Ubuntu on their laptop.}
 
-\cventry{2011-05/2011-06}{Objective-C Engineer}{Forinicom Srl, Bastia Umbra, \url{http://www.com-com.it}}{Assisi, IT}{}{Developed an iPhone application that permit you to auto-login into ComCom Hotspot. This application is used by the attendees in the Europython Conference 2011 in Florence.}
+\cventry{2011--05/2011--06}
+    {Objective-C Engineer}
+    {Forinicom Srl, Bastia Umbra, \url{http://www.com-com.it}}
+    {Assisi, IT}{}
+    {Developed an iPhone application that permit you to auto-login into ComCom
+    Hotspot. This application is used by the attendees in the Europython
+    Conference 2011 in Florence.}
 
-\cventry{2011-01/2011-06}{iPhone (iOS4) and Objective-C}{University of Perugia, Computer Science department, \url{http://informatica.unipg.it}}{Assisi, IT}{}{Following lessons of Stanford University, I trained myself to Objective-C and iPhone world, developing small applications. As final project I customized a VOIP application for iPhone based on Linphone (\url{http://www.linphone.org}).}
+\cventry{2011--01/2011--06}
+    {iPhone (iOS4) and Objective-C}
+    {University of Perugia, Computer Science department,
+        \url{http://dmi.unipg.it}}
+    {Assisi, IT}{}
+    {Following lessons of Stanford University, I trained myself to Objective-C
+    and iPhone world, developing small applications. As final project I
+    customized a VOIP application for iPhone based on Linphone
+    (\url{http://www.linphone.org}).}
 
-\cventry{2009-08/2010-03}{Paper publication \cite{aes}}{University of Perugia, Computer Science department, \url{http://informatica.unipg.it}}{Perugia, IT}{}{Preparation and publication of ``The AES implementation based on OpenCL for multi/many core architecture'' paper for the yearly conference ICCSA 2010 (\url{www.iccsa.org}) at Sangyo University, Fukuoka in Japan. The paper discussed the implementation of an AES algorithm that runs on NVIDIA/ATI graphics card.}
+\cventry{2009--08/2010--03}
+    {Paper publication\cite{aes}}
+    {University of Perugia, Computer Science department,
+        \url{http://dmi.unipg.it}}
+    {Perugia, IT}{}
+    {Preparation and publication of ``The AES implementation based on OpenCL
+    for multi/many core architecture'' paper for the yearly conference ICCSA
+    2010 (\url{www.iccsa.org}) at Sangyo University, Fukuoka in Japan. The
+    paper discussed the implementation of an AES algorithm that runs on
+    NVIDIA/ATI graphics card.}
 
-\cventry{2005-11/2006-05}{S.E.O. Search Engine Optimization}{WEDOIT sas, \url{http://www.wedoit.us}}{Assisi, IT}{}{Working in a team I acquired knowledge of S.E.O. and its behavior. The internship included S.E.O. optimization of various websites, using \emph{pagerank} and \emph{link popularity} methods. Also I worked as a system engineer of Debian-based virtualised server and I developed a S.E.O. oriented application in Python and PHP.}
+\cventry{2005--11/2006--05}
+    {S.E.O. Search Engine Optimization}
+    {WEDOIT sas, \url{http://www.wedoit.us}}
+    {Assisi, IT}{}
+    {Working in a team I acquired knowledge of S.E.O. and its behavior. The
+    internship included S.E.O. optimization of various websites, using
+    \emph{pagerank} and \emph{link popularity} methods. Also I worked as a
+    system engineer of Debian-based virtualised server and I developed a S.E.O.
+    oriented application in Python and PHP.}
 
-\cventry{2002-02}{Internship combined with IFS project, Impresa Formativa Simulata (Enterprise Training Simulation)}{IOSA CARLO Srl, \url{http://www.iosacarlo.com}}{Terni, IT}{}{Administration of enterprise network. Moreover I coordinated the work of all students, building the simulated organization chart and developing the website.}
-\pagebreak
+\cventry{2002--02}
+    {Internship combined with IFS project, Impresa Formativa Simulata
+        (Enterprise Training Simulation)}
+    {IOSA CARLO Srl, \url{http://www.iosacarlo.com}}
+    {Terni, IT}{}
+    {Administration of enterprise network. Moreover I coordinated the work of
+    all students, building the simulated organization chart and developing the
+    website.}
 
 \section{Trainings}
-\cventry{2015-10}{MongoDB Administration and Developers training}{MongoDB}{Arm Ltd - Cambridge, UK}{}{3 days training covering MongoDB query language, data modeling, indexes, aggregation framework, replica set, sharding, backup, restore and basic administration.}
+\cventry{2015--10}
+    {MongoDB Administration and Developers training}
+    {MongoDB}
+    {Arm Ltd --- Cambridge, UK}{}
+    {3 days training covering MongoDB query language, data modeling, indexes,
+    aggregation framework, replica set, sharding, backup, restore and basic
+    administration.}
 
-\cventry{2014-01/2014-03}{Cryptography 1}{Coursera}{Online - Cambridge, UK}{Final score: \textbf{PASSED}}{Topics covered in the course: semantic security, block ciphers and pseudorandom functions, DES/AES block ciphers, message integrity, collision resistant hashing, authenticated encryption, Diffie-Hellman, RSA, and Merkle puzzles, public key encryption, the ElGamal system (\url{http://bit.ly/coursera-crypto1})}
+\cventry{2014--01/2014--03}
+    {Cryptography 1}
+    {Coursera}{Online --- Cambridge, UK}
+    {Final score: \textbf{PASSED}}
+    {Topics covered in the course: semantic security, block ciphers and
+    pseudorandom functions, DES/AES block ciphers, message integrity,
+    collision resistant hashing, authenticated encryption, Diffie-Hellman, RSA,
+    and Merkle puzzles, public key encryption, the ElGamal system
+    (\url{http://bit.ly/coursera-crypto1})}
 
-\cventry{2013-09}{ITIL Foundation}{ILX Group}{Arm Ltd, Cambridge, UK}{Foundation Score: \textbf{31 out of 40, PASSED}}{The skills achieved are all included in (\url{http://bit.ly/itil-foundation})}
+\cventry{2013--09}
+    {ITIL Foundation}
+    {ILX Group}{
+    Arm Ltd, Cambridge, UK}
+    {Foundation Score: \textbf{31 out of 40, PASSED}}
+    {The skills achieved are all included in
+    (\url{http://bit.ly/itil-foundation})}
 
-\cventry{2011--2018}{Europython Conference}{Volunteer, Attendee}{Florence/Italy, Berlin Germany, Bilbao/Spain, Rimini/Italy, Edinburgh/UK}{}{I volunteered in the 2011 edition and attended 2012, 2014, 2015, 2016, 2017 and 2018 editions. Europython represents my annual appointment with Python world as it is source ideas, talks, trainings that keep me updated with the latest technologies around Python which I can apply to my day to day job.}
+\cventry{2011--2018}
+    {Europython Conference}
+    {Volunteer, Attendee}
+    {Florence/Italy, Berlin Germany, Bilbao/Spain, Rimini/Italy, Edinburgh/UK}
+    {}
+    {I volunteered in the 2011 edition and attended 2012, 2014, 2015, 2016,
+    2017 and 2018 editions. Europython represents my annual appointment with
+    Python world as it is source ideas, talks, trainings that keep me updated
+    with the latest technologies around Python which I can apply to my day to
+    day job.}
 
-\cventry{2007-02/2007-07}{Radio-amateur \textbf{class A license}}{C.I.S.A.R. Foligno's section}{Assisi, IT}{\textbf{PASSED}}{During the course for radio-amateur I acquired excellent knowledge of radio technology basics, radio devices and its usage and basics of Physics and Chemistry (magnetism, electromagnetism). International Callsign \textbf{IZ0OVB}}
+\cventry{2007--02/2007--07}
+    {Radio-amateur \textbf{class A license}}
+    {C.I.S.A.R. Foligno's section}
+    {Assisi, IT}
+    {\textbf{PASSED}}
+    {During the course for radio-amateur I acquired excellent knowledge of
+    radio technology basics, radio devices and its usage and basics of Physics
+    and Chemistry (magnetism, electromagnetism). International Callsign
+    \textbf{IZ0OVB}}
 
 \section{Education}
-\cventry{\textbf{Since 2010-10}}{Master course, with mayor in Computer Science, ``Security''}{University of Perugia, Computer Science department, \url{http://informatica.unipg.it}}{Perugia, IT}{\textit{Enrolled}}{Studying during my spare time, exams passed with excellent marks are: parallel computing, simulation, advanced programming and lab, advanced operating systems and lab, theoretical computer science, computer security, advanced databases and data mining, law applied to computer science and communications, cryptography, mobile programming.}
+\cventry{\textbf{Since 2010--10}}
+    {Master course, with mayor in Computer Science, ``Security''}
+    {University of Perugia, Computer Science department,
+        \url{http://dmi.unipg.it}}
+    {Perugia, IT}
+    {\textit{Enrolled}}
+    {Studying during my spare time, exams passed with excellent marks are:
+    parallel computing, simulation, advanced programming and lab,
+    advanced operating systems and lab, theoretical computer science, computer
+    security, advanced databases and data mining, law applied to computer
+    science and communications, cryptography, mobile programming.}
 
-\cventry{2002-10/2006-11}{Bachelor Degree in Computer Science}{University of Perugia, Computer Science department, \url{http://informatica.unipg.it}}{Perugia, IT}{\textbf{IT: 102/110 - UK: 2:1}}{Computer science Bachelor Degree, \textbf{mayor ``Network''}: Mathematics (analytical and discrete), Programming (C, Java, Php, html, xml, xsl, dtd, Pascal, scripting bash and csh, VB.NET, VRML), Databases (Mysql, MS Access and related programming language), Networks (ATM, xDSL, Mpls, X.25, Frame Relay) types (wireless, wired) and interaction between them, Knowledge of multimedia system, overview of parallel computing (mpi)}
+\cventry{2002--10/2006--11}
+    {Bachelor Degree in Computer Science}
+    {University of Perugia, Computer Science department,
+        \url{http://dmi.unipg.it}}
+    {Perugia, IT}
+    {\textbf{IT\@: 102/110 --- UK\@: 2:1}}
+    {Computer science Bachelor Degree, \textbf{mayor ``Network''}: Mathematics
+    (analytical and discrete), Programming (C, Java, Php, html, xml, xsl, dtd,
+    Pascal, scripting bash and csh, VB.NET, VRML), Databases (Mysql, MS Access
+    and related programming language), Networks (ATM, xDSL, Mpls, X.25, Frame
+    Relay) types (wireless, wired) and interaction between them, Knowledge of
+    multimedia system, overview of parallel computing (mpi)}
 
-\cventry{1996-09/2002-06}{Accountant programmer Diploma (Mercurio project)}{Ministry of Public Education - I.T.C. (Commercial technical institute) ``Federico Cesi''}{Terni, IT}{\textbf{IT: 85/100 - UK: A}}{Topics covered by the course (Commercial technical institute) of study as defined by the Ministry of Public Education: Chemistry / Physics, Mathematics and Computer Laboratory, Natural Science, Word processing and data, Second foreign language (French), Law and Economics, Business, Economics and Financial Science, Italian Language and Literature, History, Computer Management, Applied Mathematics, First foreign language (English), Law.}
+\cventry{1996--09/2002--06}
+    {Accountant programmer Diploma (Mercurio project)}
+    {Ministry of Public Education --- I.T.C. (Commercial technical institute)
+        ``Federico Cesi''}
+    {Terni, IT}
+    {\textbf{IT\@: 85/100 --- UK\@: A}}
+    {Topics covered by the course (Commercial technical institute) of study as
+    defined by the Ministry of Public Education: Chemistry / Physics,
+    Mathematics and Computer Laboratory, Natural Science, Word processing and
+    data, Second foreign language (French), Law and Economics, Business,
+    Economics and Financial Science, Italian Language and Literature, History,
+    Computer Management, Applied Mathematics, First foreign language (English),
+    Law.}
 
 \section{Bachelor Thesis}
-\cvline{title}{\emph{Wireless Broadband Network - Weconnect project} (2006-07/2006-12)}
+\cvline{title}
+    {\emph{Wireless Broadband Network --- Weconnect project}
+        (2006--07/2006--12)}
 \cvline{supervisors}{Simone Brunozzi, Sergio Tasso}
-\cvline{description}{\small The thesis was to develop a WiFi network in order to coverage \textbf{digital-divide} areas. Thanks to this project, I acquired a wide knowledge about WiFi networks and their behavior, legislation that governs the operation, RouterOS operating system (\url{www.mikrotik.com}), AAA protocol and Radius server. Finally I administered a server for the provision of various network services: mail (Postfix), web server (Apache), DNS (pdns), firewall (iptables), database (PostgreSQL), hotspot (Chillispot), Debian OS, Voyage (OS for embedded Debian based system).}
+\cvline{description}
+    {\small The thesis was to develop a WiFi network in order to coverage
+    \textbf{digital-divide} areas. Thanks to this project, I acquired a wide
+    knowledge about WiFi networks and their behavior, legislation that governs
+    the operation, RouterOS operating system (\url{www.mikrotik.com}), AAA
+    protocol and Radius server. Finally I administered a server for the
+    provision of various network services: mail (Postfix), web server (Apache),
+    DNS (pdns), firewall (iptables), database (PostgreSQL), hotspot
+    (Chillispot), Debian OS, Voyage (OS for embedded Debian based system).}
 
 \section{Languages}
-\cvitemwithcomment{Italian}{\textbf{Mother tongue}}{}
-\cvitemwithcomment{English}{\textbf{C1 level}}{\textbf{Preliminary English Test} (PET), 2011-05}
-\cvitemwithcomment{Spanish}{\textbf{C1 level}}{\textbf{Diploma de Español como Lengua Extranjera} (D.E.L.E.), 2010-05}
-\cvitemwithcomment{Portuguese (BR)}{\textbf{B1 level}}{}
-\cventry{2013-04/2013-06}{Advanced English Course}{Sixth Form College}{Cambridge, UK}{\textbf{CEF level C1-C2}}{}
-\cventry{2012--2014}{Brazilian Portuguese Course}{Sixth Form College}{Cambridge, UK}{\textbf{A2 level}}{Terms: 2012-05/2012-06 2012-10/2012-11 2013-01/2013-02 2013-10/2014-01}
-\cventry{2010-10/2011-05}{English Course}{Comprehensive School ``Volumnio'' Ponte San Giovanni}{Perugia, IT}{\textbf{B1 level}}{}
-\cventry{2009-10/2010-05}{Spanish Course}{Comprehensive School ``Volumnio'' Ponte San Giovanni}{Perugia, IT}{\textbf{B1 level}}{}
-\cventry{2007-03}{Spanish Course}{Inhispania Intlance S.L, \url{http://www.inhispania.com}}{Madrid, ES}{\textbf{A2 Level}}{}
+\cvitemwithcomment{Italian}
+    {\textbf{Mother tongue}}{}
+\cvitemwithcomment{English}
+    {\textbf{C1 level}}
+    {\textbf{Preliminary English Test} (PET), 2011--05}
+\cvitemwithcomment{Spanish}
+    {\textbf{C1 level}}
+    {\textbf{Diploma de Español como Lengua Extranjera} (D.E.L.E.), 2010--05}
+\cvitemwithcomment{Portuguese (BR)}
+    {\textbf{B1 level}}{}
+\cventry{2013--04/2013--06}
+    {Advanced English Course}
+    {Sixth Form College}
+    {Cambridge, UK}
+    {\textbf{CEF level C1-C2}}{}
+\cventry{2012--2014}
+    {Brazilian Portuguese Course}
+    {Sixth Form College}
+    {Cambridge, UK}
+    {\textbf{A2 level}}
+    {Terms: 2012--05/2012--06 2012--10/2012--11 2013--01/2013--02
+        2013--10/2014--01}
+\cventry{2010--10/2011--05}
+    {English Course}
+    {Comprehensive School ``Volumnio'' Ponte San Giovanni}
+    {Perugia, IT}
+    {\textbf{B1 level}}{}
+\cventry{2009--10/2010--05}
+    {Spanish Course}
+    {Comprehensive School ``Volumnio'' Ponte San Giovanni}
+    {Perugia, IT}
+    {\textbf{B1 level}}{}
+\cventry{2007--03}
+    {Spanish Course}
+    {Inhispania Intlance S.L, \url{http://www.inhispania.com}}
+    {Madrid, ES}
+    {\textbf{A2 Level}}{}
 
 \section{Interests}
-\cvline{Languages}{\small I've learned Spanish by myself. At the moment I speak English, Spanish, Italian and some Portuguese.}
-\cvline{Technology}{\small Attracted by all things that have a processor}
-\cvline{Music}{\small Hobby level. I played piano and guitar and I love to listen to any genre, from salsa to metal}
-\cvline{Studies}{\small Willing to learn and study}
-\cvline{Curious}{\small That's how I define myself}
-\cvline{Sports}{\small Cuban Salsa dancing, Taichi. Past: Squash, Capoeira, Kungfu, Swimming}
-\cvline{Puzzles}{\small I love any kind of puzzle and I'm very passionate about Rubik's cubes: size solved 2x2x2, 3x3x3, 4x4x4, 5x5x5, 6x6x6 and 9x9x9}
+\cvline{Languages}
+    {\small I've learned Spanish by myself. At the moment I speak English,
+    Spanish, Italian and some Portuguese.}
+\cvline{Technology}
+    {\small Attracted by all things that have a processor}
+\cvline{Music}
+    {\small Hobby level. I played piano and guitar and I love to listen to any
+    genre, from salsa to metal}
+\cvline{Studies}
+    {\small Willing to learn and study}
+\cvline{Curious}
+    {\small That's how I define myself}
+\cvline{Sports}
+    {\small Cuban Salsa dancing, Taichi. Past: Squash, Capoeira, Kungfu,
+    Swimming}
+\cvline{Puzzles}
+    {\small I love any kind of puzzle and I'm very passionate about Rubik's
+    cubes: sizes solved $2\times2\times2$, $3\times3\times3$,
+    $4\times4\times4$, $5\times5\times5$, $6\times6\times6$, and
+    $9\times9\times9$}
 
-\section{Licence(s)}
+\section{Licences}
 \cvlistitem{Full UK Driving licence}
-\cvlistitem{Operator license for amateur radio station class A (nr. 020122/AN), International callsign \textbf{IZ0OVB}}
+\cvlistitem{Operator license for amateur radio station class A (nr. 020122/AN),
+    International callsign \textbf{IZ0OVB}}
 
 \section{Extra Information}
 \cvlistitem{Nationality: Italian and British}
-%\cvlistitem{Comply with compulsory military service (referring to studies)}
-%\cvlistitem{Linux Registered User \#399008}
-%\cvlistitem{Marital status: single}
 
 % Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%  for numerical labels:
+%   CONSIDER MERGING WITH PREAMBLE PART
+%   \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"):
+%   \renewcommand{\refname}{Articles}
 \nocite{*}
-\bibliographystyle{plain}
-\bibliography{diego_russo_publications}       % 'diego_russo_publications' is the name of a BibTeX file
+\bibliographystyle{plainurl}
+\bibliography{diego_russo_publications}
 
 \section{About this CV}
 \input{revision}
-\cvline{Language}{Proudly written in \LaTeX with Vim}
+\cvline{Language}{Proudly written in \LaTeX\ and Vim}
 \cvline{Source}{\url{https://github.com/diegorusso/cv}}
 \cvline{Commit}{\Revision}
 
 % Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+% \section{Publications}
+% \nocitebook{book1,book2}
+% \bibliographystylebook{plain}
+% 'publications' is the name of a BibTeX file
+% \bibliographybook{publications}
+% \nocitemisc{misc1,misc2,misc3}
+% \bibliographystylemisc{plain}
+% 'publications' is the name of a BibTeX file
+% \bibliographymisc{publications}
 
 \clearpage
-%-----       letter       ---------------------------------------------------------
+% -----     letter    ---------------------------------------------------------
 % recipient data
-%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-%\date{January 01, 1984}
-%\opening{Dear Sir or Madam,}
-%\closing{Yours faithfully,}
-%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-%\makelettertitle
+% \recipient{Company Recruitment team}{Company, Inc. 123 somestreet, some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% use an optional argument to use a string other than "Enclosure", or 
+% redefine \enclname
+% \enclosure[Attached]{curriculum vit\ae{}}
+% \makelettertitle
 
 % \makeletterclosing
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+% if you are typesetting your resume in Chinese using CJK; the \clearpage is
+% required for fancyhdr to work correctly with CJK, though it kills the page
+% numbering by making \lastpage undefined
+% \clearpage\end{CJK*}
 \end{document}
