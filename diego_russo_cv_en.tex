@@ -6,7 +6,7 @@
 % moderncv themes
 % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and
 % 'fancy'
-\moderncvstyle{classic}
+\moderncvstyle{banking}
 % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey',
 % 'orange', 'purple' and 'red'
 \moderncvcolor{burgundy}
@@ -23,10 +23,8 @@
 % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 % \usepackage{CJKutf8} 
 
-\usepackage{footmisc} % enabling footnotes.
-
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.92]{geometry}
 % if you want to change the width of the column with the dates
 \setlength{\hintscolumnwidth}{2.65cm}
 % for the 'classic' style, if you want to force the width allocated to your
@@ -41,25 +39,25 @@
 % personal data
 \name{Diego}{Russo}
 % Below fields are optional, remove the line if not wanted
-\title{Software Engineer}
+\title{Principal Software Engineer}
 % {postcode city}{country}; the "postcode city" and "country" arguments can be
 % omitted or provided empty
+\email{me@diegor.it}
+\phone[mobile]{+44 (0) 7428 251191}
 \address{Cambridge, UK}
 % the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 % \phone[fixed]{+2~(345)~678~901}
 % \phone[fax]{+3~(456)~789~012}
-\phone[mobile]{+44 (0) 7428 251191}
-\email{me@diegor.it}
-\homepage{www.diegor.uk}
+\homepage{www.diegor.it}
 \social[linkedin]{diegor}
 \social[twitter]{diegor}
 \social[github]{diegorusso}
-\extrainfo{last update: April 2021}
+\extrainfo{Updated on \today}
 % '64pt' is the height the picture must be resized to, 0.4pt is the thickness
 % of the frame around it (put it to 0pt for no frame) and 'picture' is the name
 % of the picture file
 \photo[80pt][0.4pt]{images/diegor}
-\quote{``Now is better than never'' --- The Zen of Python}
+%\quote{``Now is better than never'' --- The Zen of Python}
 
 % bibliography adjustments (only useful if you make citations in your resume,
 % or print a list of publications using BibTeX)
@@ -76,398 +74,309 @@
 % bibliography with mutiple entries
 % \usepackage{multibib}
 % \newcites{book,misc}{{Books},{Others}}
+
+%Colour links in the CV
+\AtBeginDocument{\hypersetup{colorlinks,urlcolor=red}}
+
 % -----------------------------------------------------------------------------
 %            content
 % -----------------------------------------------------------------------------
 \begin{document}
 % -----       resume       ----------------------------------------------------
-\makecvtitle\section{Desired employment}
+\maketitle
+Proactive, innovative software development/engineering
+professional with over 15 years’ expertise leading multiple global teams on
+technical projects aimed at software/application improvement, system
+enhancement, and process automation. Excellent cross-functional communicator
+and motivational team leader with proven success delivering solutions in
+alignment with business and stakeholder requirements. Highly motivated towards
+applying diverse experience in machine learning and product-driven
+environments. Adept at leveraging knowledge and experience in Python, software
+design, deployment, and technical support to improve business processes and
+drive operational excellence. Value-added skills in staff training,
+client/partner relationship management, compliance/design standard management,
+troubleshooting, presentation, Python, and Linux.
 
-\cvline{}{\large\textbf{I'm always looking for a challenging position where I
-can express and use my passion for programming and technology. I mostly develop
-in Python in *NIX environment on a daily basis. As I'm a dynamic person,
-professional and personal growth are very important to me.}}
-
-\section{Experience}
-\subsection{Vocational}
+\section{Career Experience}
 % arguments 3 to 6 can be left empty
 % \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-\cventry{\textbf{Since 2021--04}}
-    {Principal Software Engineer in ML Group}
-    {Arm Ltd, \url{http://www.arm.com}}
-    {Cambridge, UK}{}
-    {\textbf{I'm leading the AI evaluation toolkit project}: due its
-    complexity, the project requires efforts from team across ML and Arm.
-    I'm acting as central point amongst these teams, coordinating both
-    technical tasks and communications.
-    I also did start a \textbf{Python Guild} which counts almost 500 members
-    across the company and I've been an active member of the \textbf{ML
-    Software Quality Forum.}}
 
-\cventry{2020--01/2021--03}
-    {Staff Software Engineer in ML Group}
-    {Arm Ltd, \url{http://www.arm.com}}
-    {Cambridge, UK}{}
-    {Working in the ML tooling team, I used my Python expertise across a range
-    of projects. I moved then to the \textbf{AI Evaluation Toolkit} for
-    enabling customers to evaluate Arm IP for ML workloads.
-    In the meantime I finished my master's exams and worked on the master
-    thesis.}
+%\cventry{}
+%    {Position}
+%    {Group, Company, Location, Country}
+%    {\textbf{Period}}
+%    {}
+%    {\textbf{Technical Scope}: Python\newline
+%    Stuff I did
+%    \begin{itemize}
+%        \item Stuff I did to highlight
+%    \end{itemize}}
 
-\cventry{2017--09/2019--12}
-    {Staff Software Engineer in ISG}
-    {Arm Ltd, \url{http://www.arm.com}}
-    {Cambridge, UK}{}
-    {Working in the \textbf{Mbed Linux OS team}, \textbf{I lead the build, test
-    and validation automation infrastructure of our product: from build to data
-    representation} while being part of the core engineer.
-    My day to day job required constant communication with other teams overseas
-    and with external partners.
-    Software stack used: \textbf{Jenkins/pipelines, LAVA, Artifactory, Docker,
-    Python, Bash, Linux, GitHub.}}
-
-\cventry{2016--06/2017--08}
-    {Staff Software Engineer in DSG}
-    {Arm Ltd, \url{http://www.arm.com}}
-    {Cambridge, UK}{}
-    {\textbf{Leading an infrastructure team (8)}, I looked after both the Arm
-    Compiler and OSS Toolchains automation infrastructures (GNU-A, GNU-RM and
-    LLVM OSS). Besides the technical lead, my role was to make sure all
-    infrastructures respect design principles whilst sharing knowledge,
-    technologies and processes across different teams. I kept a monthly forum
-    with stakeholders to be sure to catch their requirements and I represented
-    DSG infrastructures across the business.}
-
-\cventry{2013--11/2016--05}
-    {Staff Software Engineer in DSG}
-    {Arm Ltd, \url{http://www.arm.com}}
-    {Cambridge, UK}{}
-    {Working in the GNU team, our goal is the delivery of the GNU toolchain
-    optimized for Arm processors. \textbf{I was responsible of the
-    infrastructure for automatic builds, tests and benchmarks.} Most of the
-    infrastructure was \textbf{Python} based and it automated all the phases of
-    the process, and interacting with board farm.
-    I developed an application for triaging GCC test results: it stores them
-    into a database in order to analyse those data and to find error root
-    causes, trends, common patterns and automating the tracking of issues using
-    Jira.
-    Software stack used: \textbf{Python, flask, bootstrap, AngularJS,
-    MongoDB, Linux, svn/git.}}
-
-\cventry{2011--10/2013--10}
-    {Senior Software Engineer in Engineering IT}
-    {Arm Ltd, \url{http://www.arm.com}}
-    {Cambridge, UK}{}
-    {I worked on a variety of internal projects. I developed a reliable and
-    fault tolerant application that interacts with the LFS cluster and a AMQ
-    server.
-    I also developed a Jira plug-in to interact with an internal software in
-    order to synchronise external tickets with internal ones.
-    I looked after, improved and fixed many internal IT systems.
-    I ran the \textit{IT Early Career Scheme} for hiring graduates and interns.
-    Software stack used: \textbf{Python, MongoDB, RabbitMQ, Java, Jira, LSF,
-    Perl, C, tcsh, bash, Linux, svn/git.}}
-
-\cventry{2008--04/2011--02}
-    {Software/System Engineer in R\&D}
-    {Forinicom Srl, \url{http://www.com-com.it}}
-    {Bastia Umbra, IT}{}
-    {Worked in the R\&D team to create an innovative product in the wireless
-    communications market. I initially worked on \textbf{embedded systems},
-    customizing the OS and the software to manage authentication. I focused
-    then on the software for deploying these devices and on large-scale
-    production environment. Also, we developed a complete solution for managing
-    \textbf{hotspots}: I worked on a captive-portal to manage authentication,
-    sessions log, signs up, signals management from remote devices, integration
-    with our management software, payment via credit card and authentication
-    via SMS\@. Finally I did create a software for network monitoring.
-    Software stack used: \textbf{Python/Django, PostgreSQL database, Debian,
-    XEN, PyQT, git.}}
-
-\cventry{2010--11/2011--01}
-    {Python Engineer}
-    {Exion Sagl, Manno, Switzerland, \url{http://www.exion.ch/}}
-    {Remote, Assisi, IT}{}
-    {Setting up an \textbf{Adult WebTV} entirely developed in
-    \textbf{Python/Django with PostgreSQL} database on Linux/Apache platform
-    and Red5 as streaming server.}
-
-\cventry{2010--10/2011--01}
-    {Python Engineer}
-    {Sauce Labs Inc, San Francisco, USA, \url{http://saucelabs.com}}
-    {Remote, Assisi, IT}{}
-    {Implementing new features, bug fixing, structural changes to the site of
-    Sauce Labs. Distance work coordination. Software stack used:
-    \textbf{Python, Pylons, GitHub.}}
-
-\cventry{2006--12/2008--08 2009--09/2011--09}
-    {Python/Django Engineer}
-    {Consorzio Miles --- Servizi Integrati, Rome}
-    {Assisi, IT}{}
-    {Working in a team, I developed a management application for the
-    municipality of Bettona, for the computerization of services, the
-    management of personal data, building practices, urban planning,
-    calculation of ICI tax and updating of land registry data. Also I created
-    an advanced web interface for sending proposed practices, on-line services
-    conference, integration process, exploration of cadastral map in
-    \textbf{DXF} and production of customized automated printing.
-    \textbf{The project had a gap year when I started working for Forinicom
-    Srl.} Whenever there are overlaps, the jobs have been on a part-time
-    basis.
-    Software stack used: \textbf{Django, Python, PostgreSQL, Linux, Apache,
-    svn/git, trac.}}
-
-\subsection{Miscellaneous}
-\cventry{2016--01/2016--06}
-    {iPhone (iOS9) and Swift 2.2}
-    {University of Perugia, \url{http://dmi.unipg.it}}
-    {Udemy --- Cambridge, UK}{}
-    {After self learning Swift 2.2, I attended an online course to create iOS
-    apps. I used those skills to create DipMatBeacon
-    (\url{https://github.com/diegorusso/DipMatBeacon}), an app used to check
-    the booking state of Maths department rooms using iBeacon technology.}
-
-\cventry{2015--06/2015--12}
-    {mm\_mpi: MPI Matrix multiplication}
-    {University of Perugia, \url{http://dmi.unipg.it}}
-    {Cambridge, UK}{}
-    {Developed an application in C using MPI and Cannon's algorithm. The code
-    generates different versions of the application: blocking and non-blocking
-    MPI calls, CBLAS, and different OpenMP optimizations. Codebase:
-    \url{https://github.com/diegorusso/mm\_mpi}}
-
-\cventry{2013--06/2015--06}
-    {Staff Software Engineer}
-    {Opentaste Ltd \url{http://www.opentaste.eu}}
-    {Remote, Cambridge, UK}{}
-    {Working in my spare time, I was part of a distributed team of 10 people
-    across the globe (San Francisco, Italy, Australia). My main tasks were
-    technical advisor and code reviewer. We did organise regular hangouts
-    to discuss about plans, issues and tasks.
-    Software stack used: \textbf{Python, Flask, MongoDB, GitHub, Google Docs.}}
-
-\cventry{2011--06}
-    {Computer course teacher}
-    {Centro Studi Foligno, \url{http://www.cstudifoligno.it}}
-    {Foligno, IT}{}
-    {Taught a class of 10 people the existence of the open source world,
-    installing open source software on Windows and then proceed to install
-    Ubuntu on their laptop.}
-
-\cventry{2011--05/2011--06}
-    {Objective-C Engineer}
-    {Forinicom Srl, Bastia Umbra, \url{http://www.com-com.it}}
-    {Assisi, IT}{}
-    {Developed an iPhone app that permits you to auto-login into ComCom
-    Hotspot. This application was used at Europython 2011 in Florence.}
-
-\cventry{2011--01/2011--06}
-    {iPhone (iOS4) and Objective-C}
-    {University of Perugia, \url{http://dmi.unipg.it}}
-    {Assisi, IT}{}
-    {Attended online Stanford University classes, I learnt Objective-C,
-    developing simple applications. As final project I customized a VOIP
-    application for iPhone based on Linphone (\url{http://www.linphone.org}).}
-
-\cventry{2009--08/2010--03}
-    {Paper publication\cite{aes}}
-    {University of Perugia, \url{http://dmi.unipg.it}}
-    {Perugia, IT}{}
-    {Preparation and publication of ``The AES implementation based on OpenCL
-    for multi/many core architecture'' paper for the yearly conference ICCSA
-    2010 (\url{www.iccsa.org}) at Sangyo University, Fukuoka in Japan. The
-    paper discussed the implementation of an AES algorithm that runs on
-    NVIDIA/ATI graphics card.}
-
-\cventry{2005--11/2006--05}
-    {SEO Search Engine Optimization}
-    {WEDOIT sas}
-    {Assisi, IT}{}
-    {Working in a team I acquired knowledge of SEO and its behaviour. The
-    internship included SEO optimisation of various websites, using
-    \emph{pagerank} and \emph{link popularity} methods. Also I worked as a
-    system engineer of Debian-based virtualised server and I developed a SEO
-    oriented application in Python and PHP.}
-
-\cventry{2002--02}
-    {Internship combined with IFS project, Impresa Formativa Simulata
-        (Enterprise Training Simulation)}
-    {IOSA CARLO Srl}
-    {Terni, IT}{}
-    {Administration of enterprise network and coordination of the students
-    work, building the simulated organization chart and developing the
-    website.}
-
-\section{Trainings}
-\cventry{\textbf{Since 2011}}
-    {Europython Conference}
-    {Volunteer, Attendee}
-    {Florence, Berlin, Bilbao, Rimini, Edinburgh, online}
+\cventry{}
+    {Principal Software Engineer/Staff Software Engineer}
+    {ML Group, Arm Ltd., Cambridge, UK}
+    {\textbf{2020--Present}}
     {}
-    {I volunteered in the 2011 edition and attended since then.
-    Europython is my annual appointment with the Python world as it is
-    a source of ideas that keeps me updated with the latest trends around
-    Python.}
+    {\textbf{Technical Scope}: Tech Lead, Python, Machine Learning, IP
+    Evaluation, Inference Advisor, Software Quality.\newline
+    Act as Lead on IP Selection fro ML and Inference Advisor projects while
+    coordinating technical operations and communications between ML and Arm
+    teams. Design, code, and debug software. Identify areas for software
+    improvements and implement fixes.
+    Train personnel when required and ensure maintenance of existing
+    software. Provide recommendations on technologies to boost productivity.
+    Oversee technical projects and address software-related queries. Manage
+    software performance and attend team meetings. Formulate solutions to
+    current and potential issues.
+    \begin{itemize}
+        \item Enabled client’s opportunity to evaluate right IP for ML
+            workloads.
+        \item Established and grew Python Guild to over 700 members.
+    \end{itemize}}
 
-\cventry{2015--10}
-    {MongoDB Administration and Developers training}
-    {MongoDB}
-    {Arm Ltd --- Cambridge, UK}{}
-    {3 days training covering MongoDB essentials (query language, indexes,
-    aggregation framework, replica set, sharding\dots)}
+\cventry{}
+    {Staff Software Engineer}
+    {ISG, Arm Ltd., Cambridge, UK}
+    {\textbf{2017--2019}}
+    {}
+    {\textbf{Technical Scope}: Jenkins/Pipelines, LAVA, Artifactory, Docker,
+    Python, Bash, Linux, GitHub.\newline
+    Led build, test, data representation, and validation automation
+    infrastructure for company product. Liaised with multiple global teams and
+    external partners. Monitored product development life cycle and outlined
+    product requirements. Developed engineering system documents and design
+    software. Provided detailed design specifications outlining functional
+    requirements and architectural constraints. Implemented efficient coding
+    practices and resolved software defects. Reviewed product specifications,
+    system design, and protocol specifications. Reported on projects and
+    issues. Contributed towards process improvement.
+    \begin{itemize}
+        \item Designed automated build and test infrastructure from scratch on
+            real Cortex-A boards for custom Linux distribution.
+    \end{itemize}}
 
-\cventry{2014--01/2014--03}
-    {Cryptography 1}
-    {Coursera}{Online --- Cambridge, UK}
-    {Final score: \textbf{PASSED}}
-    {Topics covered in the course: semantic security, block ciphers and
-    pseudorandom functions, DES/AES block ciphers, message integrity,
-    collision resistant hashing, authenticated encryption, Diffie-Hellman, RSA,
-    and Merkle puzzles, public key encryption, the ElGamal system
-    (\url{http://bit.ly/coursera-crypto1})}
+\cventry{}
+    {Staff Software Engineer}
+    {DSG, Arm Ltd., Cambridge, UK}
+    {\textbf{2013--2017}}
+    {}
+    {\textbf{Technical Scope}: Python, flask, bootstrap, AngularJS, MongoDB,
+    Linux, svn/Git\newline
+    Supervised and led eight-member team while managing Arm Compilerand OSS
+    toolchains automation infrastructures. Ensured compliance with design
+    principles while sharing knowledge, processes, and technologies with
+    various teams. Hosted monthly forum to address stakeholder requirements.
+    Acted as business representative on DSG infrastructures.
+    \begin{itemize}
+        \item Collaborated with GNU team on delivery of optimised GNU toolchain
+            for Arm processors.
+        \item Drove development of infrastructure for automated builds, tests,
+            and benchmarks.
+        \item Created application for triaging GCC test results, storing
+            results in database in order for analysis and identification of
+            root causes, patterns, trends, and automation of issue tracking
+            using Jira.
+    \end{itemize}}
 
-\cventry{2013--09}
-    {ITIL Foundation}
-    {ILX Group}{
-    Arm Ltd, Cambridge, UK}
-    {Foundation Score: \textbf{31 out of 40, PASSED}}
-    {The skills achieved are all included in
-    (\url{http://bit.ly/itil-foundation})}
+\cventry{}
+    {Senior Software Engineer}
+    {Engineering IT, Arm Ltd., Cambridge, UK}
+    {\textbf{2011--2013}}
+    {}
+    {\textbf{Technical Scope}: Python, MongoDB, RabbitMQ, Java, Jira, LSF,
+    Perl, C, tcsh, bash, Linux, svn/Git\newline
+    Contributed to multiple internal projects, including development of fault
+    tolerant application which interacted with LFS cluster and AMQ server.
+    Developed Jira plug-in aimed at interacting with internal software to
+    enable synchronization of external and internal tickets. Maintained and
+    enhanced internal IT systems.
+    \begin{itemize}
+        \item Planned and executed IT Early Career Scheme aimed at recruiting
+            interns and graduates.
+    \end{itemize}}
 
-\cventry{2007--02/2007--07}
-    {Radio-amateur \textbf{class A license}}
-    {C.I.S.A.R. Foligno's section}
-    {Assisi, IT}
-    {\textbf{PASSED}}
-    {During the course for radio-amateur I acquired excellent knowledge of
-    radio technology basics, radio devices and its usage and basics of
-    magnetism, electromagnetism. Operator license for amateur radio station
-    class A (nr. 020122/AN), International callsign \textbf{IZ0OVB}}
+\cventry{}
+    {Software/System Engineer}
+    {R\&D, Forinicom Srl, Bastia Umbra, IT}
+    {\textbf{2008--2011}}
+    {}
+    {\textbf{Technical Scope}: Python/Django, PostgreSQL, Debian, XEN, PyQT,
+    Git\newline
+    Delivered innovative product in collaboration with research and development
+    team. Executed operations on embedded systems which included OS/software
+    customisation for authentication management. Developed solution aimed at
+    managing hotspots. Created captive portal for management of authentication,
+    sign up, session logs, remote device signals, and integration with
+    management software. Designed software for network monitoring.
+    \begin{itemize}
+        \item Set up internet connection and enabled fast connectivity for
+            rural areas, providing services to hundreds of clients.
+        \item Designed and implemented hotspot system with captive portal and
+            credit card payments for numerous tourists; system used at
+            EuroPython in 2011.
+    \end{itemize}}
+
+\cventry{}
+    {Python/Django Engineer}
+    {Consorzio Miles, Servizi Integrati, Rome/Assisi, IT}
+    {\textbf{2006--2008}}
+    {}
+    {\textbf{Technical Scope}: Python/Django, PostgreSQL, Linux\newline
+    Delivered in collaboration with a team the replacement of paper-based
+    manual processes with automated/digital processes. Maintained project in
+    VB and led migration to Python/Django which enabled citizens to follow and
+    update processes online and interact in real time with municipality.}
+
+\subsection{Additional Experience}
+%\cventry{}
+%    {Position}
+%    {Company, Location, Country}
+%    {\textbf{Period}}
+%    {\textbf{Technical Scope}: Python}
+%    {}
+
+\cventry{Remote, spare time project}
+    {Software Engineer}
+    {Opentaste Ltd., Global}
+    {\textbf{2013--2015}}
+    {\textbf{Technical Scope}: Technical advisor, code review, Python, Flask,
+    MongoDB}
+    {}
+
+\cventry{Contract}
+    {Objective-C Engineer}
+    {Forinicom Srl., Bastia Umbra, IT}
+    {\textbf{2011--05 / 2011--06}}
+    {\textbf{Technical Scope}: Hotspot Captive Portal app, used at Europython
+    2011 in Florence}
+    {}
+
+\cventry{Remote, Contract}
+    {Python Engineer}
+    {Exion Sagl, Manno, CH}
+    {\textbf{2010--11/2011--01}}
+    {\textbf{Technical Scope}: Python, Django, PostgreSQL}
+    {}
+
+\cventry{Remote, Contract}
+    {Python Engineer}
+    {Sauce Labs Inc., San Francisco, USA}
+    {\textbf{2010--10/2011--01}}
+    {\textbf{Technical Scope}: Python, Pylons, GitHub}
+    {}
+
+\cventry{Internship}
+    {SEO Engineer}
+    {Wedoit Sas., Assisi, IT}
+    {\textbf{2005--11 / 2006--05}}
+    {\textbf{Technical Scope}: SEO, Python, PHP}
+    {}
 
 \section{Education}
-\cventry{2010--10/2021--04}
-    {Master Degree in Computer Science, ``Security''}
-    {University of Perugia, \url{http://dmi.unipg.it}}
-    {Perugia, IT/Cambridge, UK}
-    {\textbf{IT\@: 110/110 cum laude --- UK\@: First class honours}}
-    {While working full-time, I did study during my spare time. Topics covered:
-    AI, parallel computing, simulation, advanced programming and operating
-    systems, theoretical computer science, computer security, advanced
-    databases and data mining, law applied to computer science and
-    communications, cryptography, mobile programming, operations research.}
 
-\cventry{2002--10/2006--11}
-    {Bachelor Degree in Computer Science, ``Networking''}
-    {University of Perugia, \url{http://dmi.unipg.it}}
-    {Perugia, IT}
-    {\textbf{IT\@: 102/110 --- UK\@: 2:1}}
-    {Topics covered: Mathematics (analytical and discrete), Programming (C,
-    Java, Php, html, xml, xsl, dtd, Pascal, bash/csh, VB.NET, VRML), Databases
-    (Mysql, MS Access), Networks (ATM, xDSL, Mpls, X.25, Frame Relay) types
-    (wireless, wired) and interaction between them, Knowledge of multimedia
-    system, overview of parallel computing (mpi)}
+\cventry{}
+    {University of Perugia, Perugia, IT}
+    {Master of Science in Computer Science (Security) IT\@: 110/110 cum laude
+        --- UK\@: First class honours}
+    {\textbf{2021}}
+    {}
+    {Thesis: Pruning layers of a neural network with a heuristic-based
+        approach. \url{https://github.com/diegorusso/master-degree-thesis}}
 
-\cventry{1996--09/2002--06}
-    {Accountant programmer Diploma (Mercurio project)}
-    {Ministry of Public Education --- I.T.C. (Commercial technical institute)
-        ``Federico Cesi''}
-    {Terni, IT}
-    {\textbf{IT\@: 85/100 --- UK\@: A}}
-    {Topics covered by the course (Commercial technical institute) of study as
-    defined by the Ministry of Public Education: Chemistry / Physics,
-    Mathematics and Computer Laboratory, Natural Science, Word processing and
-    data, Second foreign language (French), Law and Economics, Business,
-    Economics and Financial Science, Italian Language and Literature, History,
-    Computer Management, Applied Mathematics, First foreign language (English),
-    Law.}
+\cventry{}
+    {University of Perugia, Perugia, IT}
+    {Bachelor of Science in Computer Science (Networking) IT\@: 102/110 ---
+        UK\@: 2:1}
+    {\textbf{2006}}
+    {}
+    {Thesis: Wireless Broadband Network/WeConnect project}
 
-\section{Master Thesis}
-\cvline{title}
-    {\textbf{Per-Layer Pruning With Heuristic} --- \emph{Pruning layers of a
-        neural network with a heuristic-based approach}
-        (2020--09/2021--04)}
-\cvline{supervisors}{Alfredo Milani, Anton Kachatkou}
-\cvline{\LaTeX}{\url{https://github.com/diegorusso/master-degree-thesis}}
-\cvline{description}
-    {The aim of this thesis is to investigate and validate a specific pruning
-    technique: \textbf{layers of a network model are pruned based on a
-    heuristic whilst respecting the target sparsity of the network model.}
-    The code is implemented in TFMOT and experimented on MobileNet v1 with
-    CIFAR-10 and ImageNet 2012 datasets.
-    The heuristic distribution of weights behave more robustly compared to the
-    uniform distribution especially with higher sparsity levels.}
+\cventry{}
+    {Ministry of Public Education, Commercial Technical Institute, Federico
+        Cesi, Terni, IT}
+    {Accountant programmer Diploma (Mercurio project) IT\@: 85/100 --- UK\@: A}
+    {\textbf{2002}}
+    {}
+    {}
 
-\section{Bachelor Thesis}
-\cvline{title}
-    {\textbf{Wireless Broadband Network} --- \emph{Weconnect project}
-        (2006--07/2006--12)}
-\cvline{supervisors}{Simone Brunozzi, Sergio Tasso}
-\cvline{description}
-    {The thesis was to develop a Wi-Fi network in order to cover
-    \textbf{digital-divide} areas. Thanks to this project, I acquired a wide
-    knowledge about Wi-Fi networks, legislation that governs the operation,
-    RouterOS (\url{www.mikrotik.com}), AAA protocol and Radius server. I
-    managed a server for the provision of various network services: mail
-    (Postfix), web server (Apache), DNS (pdns), firewall (iptables), database
-    (PostgreSQL), hotspot (Chillispot), Debian OS, Voyage OS.}
+\section{Professional Training}
+
+\cventry{Learning Tree}
+    {Arm Ltd., Cambridge, UK}
+    {Advanced Python Training}
+    {\textbf{2022}}
+    {}
+    {}
+
+\cventry{Doulos}
+    {Arm Ltd., Cambridge, UK}
+    {C++ Programming for Embedded Systems}
+    {\textbf{2021}}
+    {}
+    {}
+
+\cventry{Doulos}
+    {Arm Ltd., Cambridge, UK}
+    {Practical Deep Learning}
+    {\textbf{2020}}
+    {}
+    {}
+
+\cventry{Udemy}
+    {University of Perugia, Perugia, IT}
+    {iPhone (iOS9) and Swift 2.2:
+        \href{https://github.com/diegorusso/DipMatBeacon}{DipMatBeacon}}
+    {\textbf{2016}}
+    {App used to check the booking state of university rooms}
+    {}
+
+\cventry{MongoDB}
+    {Arm Ltd., Cambridge, UK}
+    {MongoDB Administration and Developers training}
+    {\textbf{2015}}
+    {}
+    {}
+
+\cventry{Coursera}
+    {Online}
+    {\href{http://bit.ly/coursera-crypto1}{Cryptography 1}}
+    {\textbf{2014}}
+    {}
+    {}
+
+\cventry{ILX Group}
+    {Arm Ltd., Cambridge, UK}
+    {ITIL Foundation}
+    {\textbf{2013}}
+    {}
+    {}
+
+\cventry{}
+    {University of Perugia, Perugia, IT}
+    {iPhone (iOS4) and Objective-C}
+    {\textbf{2011}}
+    {Customised existent VOIP app}
+    {}
+
+\section{Licenses}
+
+\cvline{}{Radio-amateur class A license (Nr. 020122/AN)/ International callsign
+            IZ0OVB – C.I.S.A.R. Foligno’s section – 2007}
+
+\section{Affiliations}
+\cvitemwithcomment{Publication}{\href{https://doi.org/10.1109/ICCSA.2010.44}{
+    The AES implementation based on OpenCL for multi/many core architecture}}
+        {ICCSA 2010, Sangyo Uni., Fukuoka, JP}
+\cvitemwithcomment{EuroPython Conference}{Volunteer/Attendee, Florence, Berlin,
+    Bilbao, Rimini, Edinburgh, Online}{2011 – Present}
 
 \section{Languages}
-\cvitemwithcomment{Italian}
-    {\textbf{Mother tongue}}{Italian citizenship}
-\cvitemwithcomment{English}
-    {\textbf{C1 level}}{British citizenship}
-\cvitemwithcomment{Spanish}
-    {\textbf{C1 level}}{}
+\cvlanguage{Italian}{Fluent}{Italian citizenship}
+\cvlanguage{English}{C1}{British citizenship}
+\cvlanguage{Spanish}{C1}{}
 
-\section{Interests}
-\cvline{Technology}
-    {\small Attracted by all things which have a processor}
-\cvline{Music}
-    {\small Hobby level. I played piano and guitar and I love to listen to any
-    genre, from salsa to metal}
-\cvline{Sports}
-    {\small Cuban Salsa dancing. Past: Taichi, Squash, Capoeira, Kungfu,
-    Swimming}
-\cvline{Puzzles}
-    {\small I love any kind of puzzle and I'm very passionate about Rubik's
-    cubes: sizes solved from $2\times2\times2$ to $9\times9\times9$}
+\begin{center}
+Proudly written in \LaTeX\ and Vim: https://github.com/diegorusso/cv
+\end{center}
 
-% Publications from a BibTeX file without multibib
-\nocite{*}
-\bibliographystyle{plainurl}
-\bibliography{diego_russo_publications}
-
-% Publications from a BibTeX file using the multibib package
-% \section{Publications}
-% \nocitebook{book1,book2}
-% \bibliographystylebook{plain}
-% 'publications' is the name of a BibTeX file
-% \bibliographybook{publications}
-% \nocitemisc{misc1,misc2,misc3}
-% \bibliographystylemisc{plain}
-% 'publications' is the name of a BibTeX file
-% \bibliographymisc{publications}
-
-\section{About this CV}
-\cvdoubleitem{Language}{Proudly written in \LaTeX\ and Vim}{Source}{\url{https://github.com/diegorusso/cv}}
-%\input{revision}
-%\cvline{Commit}{\Revision}
-
-\clearpage
-% -----     letter    ---------------------------------------------------------
-% recipient data
-% \recipient{Company Recruitment team}{Company, Inc. 123 somestreet, some city}
-% \date{January 01, 1984}
-% \opening{Dear Sir or Madam,}
-% \closing{Yours faithfully,}
-% use an optional argument to use a string other than "Enclosure", or 
-% redefine \enclname
-% \enclosure[Attached]{curriculum vit\ae{}}
-% \makelettertitle
-
-% \makeletterclosing
-% if you are typesetting your resume in Chinese using CJK; the \clearpage is
-% required for fancyhdr to work correctly with CJK, though it kills the page
-% numbering by making \lastpage undefined
-% \clearpage\end{CJK*}
 \end{document}
