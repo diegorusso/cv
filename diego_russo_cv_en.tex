@@ -1,15 +1,19 @@
+% Ensure hyperlink colors are enabled when moderncv loads hyperref.
+\PassOptionsToPackage{colorlinks=true,linkcolor=red,urlcolor=red,citecolor=red}{hyperref}
 % possible options include font size ('10pt', '11pt' and '12pt'),
 % paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper',
 % 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \documentclass[10pt,a4paper,sans]{moderncv}
 
 % moderncv themes
-% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and
-% 'fancy'
-\moderncvstyle{banking}
 % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey',
 % 'orange', 'purple' and 'red'
 \moderncvcolor{red}
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and
+% 'fancy'
+\moderncvstyle[nosymbols]{banking}
+% Use Font Awesome symbols without requiring XeTeX/LuaTeX.
+\moderncvicons{awesome}
 % to set the default font; use '\sfdefault' for the default sans serif font,
 % '\rmdefault' for the default roman one, or any tex font name
 % \renewcommand{\familydefault}{\sfdefault}
@@ -20,6 +24,10 @@
 % if you are not using xelatex or lualatex, replace by the encoding you are
 % using
 \usepackage[utf8]{inputenc}
+% Avoid cmss font shape warnings by mapping missing shapes to existing ones.
+\DeclareFontShape{T1}{cmss}{b}{n}{<->ssub * cmss/bx/n}{}
+\DeclareFontShape{T1}{cmss}{b}{it}{<->ssub * cmss/bx/it}{}
+\DeclareFontShape{T1}{cmss}{sb}{n}{<->ssub * cmss/m/n}{}
 % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 % \usepackage{CJKutf8}
 
@@ -35,11 +43,13 @@
 
 % required when changes are made to page layout lengths
 \AtBeginDocument{\recomputelengths}
+% Match moderncv dotted subsection rule, but avoid underfull hbox warnings.
+\renewcommand*{\subsectionrule}{\leavevmode{\color{bodyrulecolor}\xleaders\hbox to 0.35em{\hss\scriptsize.\hss}\hfill}}
 
 % personal data
-\name{Diego}{Russo}
+\name{}{Diego Russo}
 % Below fields are optional, remove the line if not wanted
-\title{Principal Software Engineer}
+\title{Principal Software Engineer | CPython Core Developer}
 % {postcode city}{country}; the "postcode city" and "country" arguments can be
 % omitted or provided empty
 \email{me@diegor.it}
@@ -76,7 +86,7 @@
 % \newcites{book,misc}{{Books},{Others}}
 
 %Colour links in the CV
-\AtBeginDocument{\hypersetup{colorlinks,urlcolor=red}}
+% hyperlink colors configured via \PassOptionsToPackage above
 
 % -----------------------------------------------------------------------------
 %            content
@@ -84,19 +94,14 @@
 \begin{document}
 % -----       resume       ----------------------------------------------------
 \maketitle
-Proactive, innovative software development/engineering
-professional with over 17 years’ expertise leading multiple global teams on
-technical projects aimed at software/application improvement, system
-enhancement, and process automation. Excellent cross-functional communicator
-and motivational team leader with proven success delivering solutions in
-alignment with business and stakeholder requirements. Highly motivated towards
-applying diverse experience in machine learning, product-driven
-environments as well as Open Source projects. Adept at leveraging knowledge
-and experience in Python, software design, deployment, and technical support
-to improve business processes and drive operational excellence.
-Value-added skills in staff training, client/partner relationship management,
-compliance/design standard management, troubleshooting, presentation, Python,
-and Linux.
+CPython Core Developer and Principal Software Engineer in Arm's Runtimes team,
+based in Cambridge, UK. 20+ years in software engineering, using Python since
+2006 and contributing to CPython since 2023, with a focus on interpreter
+performance, JIT-related work, CI infrastructure, and ensuring CPython and its
+ecosystem run reliably and efficiently on Arm platforms. Work sits at the
+intersection of runtime, performance engineering, and large-scale open-source
+collaboration. EuroPython organiser and lead of the Arm Python Guild, an
+internal community of more than 1,400 Python developers across the company.
 
 \section{Career Experience}
 % arguments 3 to 6 can be left empty
@@ -119,26 +124,14 @@ and Linux.
     {\textbf{2023--present}}
     {}
     {\textbf{Technical Scope}: Tech Lead, CPython.\newline
-		After a successful 6 months secondment, I’m joining the
-		Runtimes team to continue the work I started with CPython.
-		I will be engaging more with upstream community and bring my
-		expertise to make CPython and its ecosystem work flawlessly
-		for developers around the world on Arm platforms.}
-
-\cventry{}
-    {Principal Software Engineer}
-		{CE-SW Runtimes (6 months secondment), Arm Ltd., Cambridge, UK}
-    {\textbf{2023}}
-    {}
-    {\textbf{Technical Scope}: Tech Lead, CPython.\newline
-		As part of the secondment programme, I spent six months in the CE-SW
-		Runtimes team looking at the status of CPython (and its ecosystem)
-		on Arm platforms.
-		I've engaging with Arm's partners and the upstream community in
-		order to address potential gaps.
+		Started with a six-month secondment in 2023 to assess the CPython
+		ecosystem on Arm platforms, then joined the Runtimes team to continue
+		enablement work with upstream collaboration and ecosystem reliability
+		for developers. Worked on CPython JIT-related investigations and
+		performance work on Arm platforms.
     \begin{itemize}
-			\item I presented at EuroPython 2023:
-				\href{https://www.youtube.com/watch?v=nYf7r0lkTIs}{"Python on Arm architecture"}
+			\item Organised the CPython Core Dev Sprint 2025 at Arm in Cambridge
+				(\href{https://developer.arm.com/community/arm-community-blogs/b/tools-software-ides-blog/posts/cpython-core-dev-sprint-2025-at-arm-cambridge-the-biggest-one-yet}{blog post}).
     \end{itemize}}
 
 \cventry{}
@@ -148,22 +141,15 @@ and Linux.
     {}
     {\textbf{Technical Scope}: Tech Lead, Python, Machine Learning, IP
     Evaluation, Inference Advisor, Software Quality.\newline
-    Act as lead for \href{https://pypi.org/project/mlia/}{Arm ML Inference
-    Advisor} project while coordinating technical operations and communications
-    between ML and Arm teams. Design, code, and debug software. Identify areas
-    for software improvements and implement fixes.
-    Train personnel when required and ensure maintenance of existing
-    software. Provide recommendations on technologies to boost productivity.
-    Oversee technical projects and address software-related queries. Manage
-    software performance and attend team meetings. Formulate solutions to
-    current and potential issues.
-    Previous project: IP Selection Sandbox for ML\@.
+    Led the open-source \href{https://pypi.org/project/mlia/}{Arm ML Inference
+    Advisor} project and coordinated technical delivery across ML and Arm
+    teams. Owned design, implementation, and maintenance of ML tooling and
+    partner integrations. Previous project: IP Selection Sandbox for ML\@.
     \begin{itemize}
-        \item Help AI/ML developers to tailor and optimise their ML models to
-            run well on Arm hardware: \url{https://pypi.org/project/mlia/}
-        \item Enabled client’s opportunity to evaluate right IP for ML
-            workloads.
-        \item Established and grew Python Guild to over 700 members.
+        \item Helped AI/ML developers tailor and optimize models for Arm
+            hardware: \url{https://pypi.org/project/mlia/}
+        \item Built the IP Selection Sandbox for ML, enabling clients to
+            evaluate the right IP for workloads.
     \end{itemize}}
 
 \cventry{}
@@ -173,15 +159,9 @@ and Linux.
     {}
     {\textbf{Technical Scope}: Jenkins/Pipelines, LAVA, Artifactory, Docker,
     Python, Bash, Linux, GitHub.\newline
-    Led build, test, data representation, and validation automation
-    infrastructure for company product. Liaised with multiple global teams and
-    external partners. Monitored product development life cycle and outlined
-    product requirements. Developed engineering system documents and design
-    software. Provided detailed design specifications outlining functional
-    requirements and architectural constraints. Implemented efficient coding
-    practices and resolved software defects. Reviewed product specifications,
-    system design, and protocol specifications. Reported on projects and
-    issues. Contributed towards process improvement.
+    Led build, test, data representation, and validation automation for
+    product development. Partnered with global teams and external partners,
+    produced system design documents, and improved CI reliability.
     \begin{itemize}
         \item Designed automated build and test infrastructure from scratch on
             real Cortex-A boards for custom Linux distribution.
@@ -192,22 +172,19 @@ and Linux.
     {DSG, Arm Ltd., Cambridge, UK}
     {\textbf{2013--2017}}
     {}
-    {\textbf{Technical Scope}: Python, flask, bootstrap, AngularJS, MongoDB,
-    Linux, svn/Git\newline
-    Supervised and led eight-member team while managing Arm Compilerand OSS
-    toolchains automation infrastructures. Ensured compliance with design
-    principles while sharing knowledge, processes, and technologies with
-    various teams. Hosted monthly forum to address stakeholder requirements.
+    {\textbf{Technical Scope}: Python, Flask, Bootstrap, AngularJS, MongoDB,
+    Linux, SVN/Git\newline
+    Supervised an eight-member team and managed automation infrastructure for
+    Arm Compiler and OSS toolchains. Ensured compliance with design principles,
+    shared knowledge across teams, and hosted a monthly stakeholder forum.
     Acted as business representative on DSG infrastructures.
     \begin{itemize}
-        \item Collaborated with GNU team on delivery of optimised GNU toolchain
-            for Arm processors.
+        \item Collaborated with the GNU team to deliver optimized GNU
+            toolchains for Arm processors.
         \item Drove development of infrastructure for automated builds, tests,
             and benchmarks.
-        \item Created application for triaging GCC test results, storing
-            results in database in order for analysis and identification of
-            root causes, patterns, trends, and automation of issue tracking
-            using Jira.
+        \item Created an application to triage GCC test results, store results
+            in a database, and automate issue tracking using Jira.
     \end{itemize}}
 
 \cventry{}
@@ -216,15 +193,13 @@ and Linux.
     {\textbf{2011--2013}}
     {}
     {\textbf{Technical Scope}: Python, MongoDB, RabbitMQ, Java, Jira, LSF,
-    Perl, C, tcsh, bash, Linux, svn/Git\newline
-    Contributed to multiple internal projects, including development of fault
-    tolerant application which interacted with LFS cluster and AMQ server.
-    Developed Jira plug-in aimed at interacting with internal software to
-    enable synchronization of external and internal tickets. Maintained and
-    enhanced internal IT systems.
+    Perl, C, tcsh, bash, Linux, SVN/Git\newline
+    Contributed to internal platforms, including a fault-tolerant application
+    integrating with LSF cluster and AMQ server. Built a Jira plug-in to
+    synchronize external and internal tickets, and maintained core IT systems.
     \begin{itemize}
-        \item Planned and executed IT Early Career Scheme aimed at recruiting
-            interns and graduates.
+        \item Planned and executed the IT Early Career Scheme for interns and
+            graduates.
     \end{itemize}}
 
 \cventry{}
@@ -234,12 +209,10 @@ and Linux.
     {}
     {\textbf{Technical Scope}: Python/Django, PostgreSQL, Debian, XEN, PyQT,
     Git\newline
-    Delivered innovative product in collaboration with research and development
-    team. Executed operations on embedded systems which included OS/software
-    customisation for authentication management. Developed solution aimed at
-    managing hotspots. Created captive portal for management of authentication,
-    sign up, session logs, remote device signals, and integration with
-    management software. Designed software for network monitoring.
+    Delivered embedded systems and web solutions for authentication and
+    hotspot management. Built a captive portal for sign-up, session logs,
+    remote device signals, and payment integration, plus network monitoring
+    software.
     \begin{itemize}
         \item Set up internet connection and enabled fast connectivity for
             rural areas, providing services to hundreds of clients.
@@ -254,10 +227,9 @@ and Linux.
     {\textbf{2006--2008}}
     {}
     {\textbf{Technical Scope}: Python/Django, PostgreSQL, Linux\newline
-    Delivered in collaboration with a team the replacement of paper-based
-    manual processes with automated/digital processes. Maintained project in
-    VB and led migration to Python/Django which enabled citizens to follow and
-    update processes online and interact in real time with municipality.}
+    Worked with a team to replace paper-based processes with a Django web
+    system. Led migration from VB to Python/Django, enabling citizens to
+    track and update municipal processes online in real time.}
 
 \subsection{Additional Experience}
 %\cventry{}
@@ -267,42 +239,56 @@ and Linux.
 %    {\textbf{Technical Scope}: Python}
 %    {}
 
-\cventry{Remote, spare time project}
-    {Software Engineer}
-    {Opentaste Ltd., Global}
-    {\textbf{2013--2015}}
-    {\textbf{Technical Scope}: Technical advisor, code review, Python, Flask,
-    MongoDB}
-    {}
-
 \cventry{Contract}
     {Objective-C Engineer}
     {Forinicom Srl., Bastia Umbra, IT}
     {\textbf{2011--05 / 2011--06}}
-    {\textbf{Technical Scope}: Hotspot Captive Portal app, used at Europython
-    2011 in Florence}
     {}
+    {\textbf{Technical Scope}: Hotspot Captive Portal app, used at EuroPython
+    2011 in Florence}
+
 
 \cventry{Remote, Contract}
     {Python Engineer}
     {Exion Sagl, Manno, CH}
     {\textbf{2010--11/2011--01}}
-    {\textbf{Technical Scope}: Python, Django, PostgreSQL}
     {}
+    {\textbf{Technical Scope}: Python, Django, PostgreSQL}
 
 \cventry{Remote, Contract}
     {Python Engineer}
     {Sauce Labs Inc., San Francisco, USA}
     {\textbf{2010--10/2011--01}}
-    {\textbf{Technical Scope}: Python, Pylons, GitHub}
     {}
+    {\textbf{Technical Scope}: Python, Pylons, GitHub}
 
 \cventry{Internship}
     {SEO Engineer}
     {Wedoit Sas., Assisi, IT}
     {\textbf{2005--11 / 2006--05}}
-    {\textbf{Technical Scope}: SEO, Python, PHP}
     {}
+    {\textbf{Technical Scope}: SEO, Python, PHP}
+
+\section{Talks \& Podcasts}
+\cvitemwithcomment{2026}{Python SDQ January 2026 Meetup: Python por dentro: personas, procesos, código}
+    {\href{https://github.com/diegorusso/diegorusso/blob/main/2026/python_sdq_python_por_dentro.pdf}{Slides} |
+    \href{https://www.youtube.com/watch?v=PbLSttImQ3k}{YouTube}}
+\cvitemwithcomment{2025}{EuroPython / PyCon UK: Exploring the CPython JIT}
+    {\href{https://github.com/diegorusso/diegorusso/blob/main/2025/ep2025_exploring_the_cpython_jit.pdf}{Slides} |
+    \href{https://youtu.be/5-AA7-fHYYM?si=3jILxr9B1Coeq3-F}{PyCon UK} |
+    \href{https://youtu.be/5si4zkAngpA?si=cxYDkwUK7w-r1jJQ}{EuroPython}}
+\cvitemwithcomment{2025}{Microsoft Build: Run PyTorch natively on Windows on Arm using GitHub runners}
+    {\href{https://build.microsoft.com/en-US/sessions/ODFP974}{Session} |
+    \href{https://www.youtube.com/watch?v=uhGg7wb6jV4}{Recording}}
+\cvitemwithcomment{2025}{Intervista Pythonista: Runtime e Interpreter con un Core Developer! \#66}
+    {\href{https://www.youtube.com/watch?v=Xx09D359mR4}{YouTube} |
+    \href{https://creators.spotify.com/pod/profile/marco-santoni/episodes/Runtime-e-Interpreter-con-un-Core-Developer--66-e35gcjl}{Spotify} |
+    \href{https://podcasts.apple.com/fr/podcast/intervista-pythonista/id1561566952}{Apple Podcasts}}
+\cvitemwithcomment{2024}{Arm Innovation Coffee: GitHub Arm-hosted Runners with Larissa Fortuna and Diego Russo}
+    {\href{https://www.youtube.com/watch?v=CMO4rL2msoQ}{YouTube}}
+\cvitemwithcomment{2023}{EuroPython: Python on Arm Architecture}
+    {\href{https://github.com/diegorusso/diegorusso/blob/main/2023/ep2023_python_on_arm.pdf}{Slides} |
+    \href{https://www.youtube.com/watch?v=nYf7r0lkTIs}{Recording}}
 
 \section{Education}
 
@@ -362,11 +348,11 @@ and Linux.
     {}
 
 \cventry{Udemy}
-    {University of Perugia, Perugia, IT}
+    {Online}
     {iPhone (iOS9) and Swift 2.2:
         \href{https://github.com/diegorusso/DipMatBeacon}{DipMatBeacon}}
     {\textbf{2016}}
-    {App used to check the booking state of university rooms}
+    {University of Perugia project app for booking state of rooms}
     {}
 
 \cventry{MongoDB}
@@ -376,38 +362,11 @@ and Linux.
     {}
     {}
 
-\cventry{Coursera}
-    {Online}
-    {\href{http://bit.ly/coursera-crypto1}{Cryptography 1}}
-    {\textbf{2014}}
-    {}
-    {}
-
-\cventry{ILX Group}
-    {Arm Ltd., Cambridge, UK}
-    {ITIL Foundation}
-    {\textbf{2013}}
-    {}
-    {}
-
-\cventry{}
-    {University of Perugia, Perugia, IT}
-    {iPhone (iOS4) and Objective-C}
-    {\textbf{2011}}
-    {Customised existent VOIP app}
-    {}
-
-\section{Licenses}
-
-\cvline{}{Radio-amateur class A license (Nr. 020122/AN)/ International callsign
-            IZ0OVB – C.I.S.A.R. Foligno’s section – 2007}
-
 \section{Affiliations}
-\cvitemwithcomment{Publication}{\href{https://doi.org/10.1109/ICCSA.2010.44}{
-    The AES implementation based on OpenCL for multi/many core architecture}}
-        {ICCSA 2010, Sangyo Uni., Fukuoka, JP}
-\cvitemwithcomment{EuroPython Conference}{Volunteer/Attendee, Florence, Berlin,
-    Bilbao, Rimini, Edinburgh, Online}{2011 – Present}
+\cvitemwithcomment{Python Software Foundation}{Contributor (2023--2024),
+    Triage Team (2024--2025), Core Developer (2025--present)}{2023--present}
+\cvitemwithcomment{EuroPython Conference}{Organiser/Volunteer/Attendee,
+    Florence, Berlin, Bilbao, Rimini, Edinburgh, Online}{2011 -- Present}
 
 \section{Languages}
 \cvlanguage{Italian}{Fluent}{Italian citizenship}
@@ -415,7 +374,7 @@ and Linux.
 \cvlanguage{Spanish}{C1}{}
 
 \begin{center}
-Proudly written in \LaTeX\ and Vim: https://github.com/diegorusso/cv
+Proudly written in \LaTeX\ and Vim: \url{https://github.com/diegorusso/cv}
 \end{center}
 
 \end{document}

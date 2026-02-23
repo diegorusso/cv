@@ -158,8 +158,13 @@ AUXFILES += revision.aux
 endif
 
 # to generate aux but not pdf from pdflatex, use -draftmode
+ifeq ($(strip $(BIBLATEXFILES)),)
+%.aux: %.tex $(REVDEPS)
+	$(PDFLATEX) -draftmode $* $(ERRFILTER)
+else
 %.aux %.bcf: %.tex $(REVDEPS)
 	$(PDFLATEX) -draftmode $* $(ERRFILTER)
+endif
 
 # specify KEEPAUX=1 if you need to keep auxiliary (.aux) files for some other
 # tool (e.g., an autocompleting text editor)
